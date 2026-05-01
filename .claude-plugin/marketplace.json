@@ -1,0 +1,18 @@
+{
+    "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+    "name": "supreme-coding-guidelines",
+    "description": "The definitive .ah skill combining extreme token compression, surgical coding behavior, disciplined diagnosis, TDD, and architectural control. Built on the Teleological Semantic Format (.ah) by David C. Cavalcante (creator of MAIC™, HIM™, and NHE™).",
+    "owner": {
+        "name": "David C. Cavalcante",
+        "url": "https://github.com/davccavalcante",
+        "x": "@davccavalcante"
+    },
+    "plugins": [
+        {
+            "name": "supreme-coding-guidelines",
+            "description": "The definitive .ah skill combining extreme token compression, surgical coding behavior, disciplined diagnosis, TDD, and architectural control. Built on the Teleological Semantic Format (.ah) by David C. Cavalcante (creator of MAIC™, HIM™, and NHE™).",
+            "source": "./",
+            "category": "productivity"
+        }
+    ]
+}

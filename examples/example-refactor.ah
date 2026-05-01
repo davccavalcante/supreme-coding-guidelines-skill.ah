@@ -1,0 +1,9 @@
+@v1.ah
+# example.refactor
+NAME> example.refactor
+TASK> refactor.calculate.average
+INPUT> list.of.numbers
+OUTPUT> optimized.function.tests
+CONSTRAINT> no.external.libs
+CONSTRAINT> surgical.changes.only
+#> 2319
