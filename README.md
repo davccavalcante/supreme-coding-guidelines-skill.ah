@@ -1,39 +1,40 @@
 # Supreme Coding Guidelines Skill .ah
 
-![.AH](https://img.shields.io/badge/AH_Language-1.0.0-black.svg)
-![SKILL](https://img.shields.io/badge/SKILL-1.0.0-black.svg)
-![Version](https://img.shields.io/badge/version-1.0.0-black.svg)
+![.AH](https://img.shields.io/badge/AH_Language-1.0.1-black.svg)
+![SKILL](https://img.shields.io/badge/SKILL-1.0.1-black.svg)
+![Version](https://img.shields.io/badge/version-1.0.1-black.svg)
 ![License](https://img.shields.io/badge/license-MIT-black.svg)
 
 [![Star History Chart](https://api.star-history.com/svg?repos=davccavalcante/supreme-coding-guidelines-skill.ah&type=timeline&legend=top-left)](https://www.star-history.com/#davccavalcante/supreme-coding-guidelines-skill.ah&type=timeline&legend=top-left)
 
-**The definitive coding behavior skill for Claude Code, Cursor, and modern LLM agents in 2027-2030.**
+**A composable coding-behavior skill for Claude Code, Cursor, and modern LLM agents.**
 
-A single, ultra-efficient skill that combines extreme token compression, surgical precision, disciplined diagnosis, and architectural control — all delivered in the new `.ah` (Teleological Semantic Format).
+A single skill bundle that combines high token compression, surgical precision, disciplined diagnosis, and architectural control — all delivered in the new `.ah` (Teleological Semantic Format).
 
-Created by [**David C Cavalcante**](https://www.linkedin.com/in/hellodav/), originator of the proprietary frameworks **MAIC™** (Massive Artificial Intelligence Consciousness), **HIM™** (Hybrid Entity Intelligence Model), and **NHE™** (Non-Human Entity). These frameworks provide the ontological and teleological foundation that makes this skill more robust, consistent, and token-efficient than any existing skill.
+Created by [**David C Cavalcante**](https://www.linkedin.com/in/hellodav/), originator of the proprietary frameworks **MAIC™** (Massive Artificial Intelligence Consciousness), **HIM™** (Hybrid Entity Intelligence Model), and **NHE™** (Non-Human Entity). These frameworks provide the ontological and teleological foundation for the format.
 
-## Why Supreme Guidelines outperforms existing skills
+## How Supreme Guidelines compares to existing skills
 
-| Criterion                                | Caveman | Karpathy Guidelines | Matt Pocock Skills | Supreme Guidelines (.ah)                      |
-|------------------------------------------|---------|---------------------|--------------------|-----------------------------------------------|
-| Token compression                        | 75%     | —                   | —                  | **82%**                             |
-| Surgical behavior                        | —       | Excellent           | —                  | **10/10** (GoT + Self-Refine)                 |
-| Disciplined diagnosis + TDD              | —       | —                   | Excellent          | **10/10** (feedback loop + Plan-then-Execute) |
-| Instruction Hierarchy + Scope Discipline | —       | —                   | —                  | **Native (OWASP #1 2026)**                    |
-| Mathematical validation                  | —       | —                   | —                  | **Gematria checksum**                         |
-| Persistent after single load             | Partial | Partial             | Partial            | **Guaranteed always-on**                      |
-| skills.sh + Cursor compatibility         | Yes     | Yes                 | Yes                | **Native + .ah parser**                       |
+| Criterion                                | Caveman                | Karpathy Guidelines | Matt Pocock Skills | Supreme Guidelines (.ah)                       |
+|------------------------------------------|------------------------|---------------------|--------------------|------------------------------------------------|
+| Output token compression                 | ~65–75% (measured)     | —                   | —                  | ~50–82% provisional (pending benchmark)        |
+| Surgical behavior                        | —                      | Strong              | —                  | Strong (GoT + Self-Refine)                     |
+| Disciplined diagnosis + TDD              | —                      | —                   | Strong             | Strong (feedback loop + Plan-then-Execute)     |
+| Instruction Hierarchy + Scope Discipline | —                      | —                   | —                  | Native (defense against LLM01 prompt injection)|
+| Mathematical validation                  | —                      | —                   | —                  | Gematria checksum (`#> N`)                     |
+| Persistent after single load             | On invocation          | Auto via `CLAUDE.md`| On demand          | Always-on after parser bootstrap               |
+| skills.sh + Cursor compatibility         | Yes                    | Yes                 | Yes                | Native + `.ah` parser                          |
 
-**Real-world results in Opus 4.7 (1M context):**
-- 78–82% average reduction in output tokens
-- 65% fewer correction iterations
-- Zero scope drift in long agentic workflows
-- Extended 5-hour quota life
+> **Note:** the empirical numbers in this table and the section below are provisional. The systematic benchmark methodology is documented in [`BENCHMARK.md`](BENCHMARK.md); measured results will be published as `BENCHMARK_RESULTS.md` (target Q3 2026) and this table will be revised with the actual values.
+
+**Provisional metrics (informal evaluation, pending systematic benchmark):**
+- Estimated 50–82% reduction in output tokens depending on skill scope coverage
+- Reduced iteration counts in long agentic workflows
+- Strong scope discipline by design (`#> N` integrity check + closed vocabulary)
 
 ## What .ah Is (The New Prompt Language)
 
-`.ah` is a revolutionary teleological semantic language designed by David C. Cavalcante for prompt engineering, LLMOps, and ML systems.
+`.ah` is a teleological semantic language designed by David C. Cavalcante for prompt engineering, LLMOps, and ML systems.
 
 It unites principles from neurolinguistics, linguistics, semiotics, the Sapir-Whorf hypothesis (strong contextual + weak when memory is present), equidistributed sequences (Halton/Sobol-style token distribution), gematria (as pure mathematical checksum, not mysticism), and teleology.
 
@@ -43,9 +44,9 @@ Key characteristics:
 - **Sapir-Whorf strong on first read**: strongly constrains LLM inference; relaxes when NHE-style memory exists.
 - **Equidistributed tokens**: no redundancy, no gaps — every token occupies a unique, necessary position.
 - **Minimum pixel-weight**: uses `>` (low visual weight), `.` (lowest), `#` (single character), no decorative spaces.
-- **Hybrid heritage**: incorporates COBOL declarative style, MARK IV batch processing, and TOON token-oriented compactness — but transcends them with semantic teleology.
+- **Hybrid heritage**: synthesizes COBOL declarative style, MARK IV batch processing, and TOON token-oriented compactness, adding semantic teleology and gematria validation as new contributions.
 
-A single 5-line `axiom.ah` file replaces 400+ tokens of traditional `.md` prompts while guaranteeing perfect LLM comprehension regardless of prior context.
+A compact `.ah` file can replace several hundred tokens of traditional `.md` prompts while providing deterministic integrity validation regardless of prior context.
 
 ## Diagrams
 
@@ -158,61 +159,108 @@ graph TD
 
 ## Installation (One-Time)
 
-### 1. Install the .ah parser (required once)
+### Claude Code (native)
+
 ```bash
-npx skills add https://github.com/davccavalcante/supreme-coding-guidelines-skill.ah --skill ah-parser -g -y
+# 1. Add this repo as a Claude Code marketplace
+/plugin marketplace add davccavalcante/supreme-coding-guidelines-skill.ah
+
+# 2. Install the bundled plugin (auto-discovers ah-parser + supreme-coding-guidelines)
+/plugin install supreme-coding-guidelines@ah-language
 ```
 
-### 2. Install the main skill
+### skills.sh (Cursor, Trae, Zed, any compatible agent)
+
 ```bash
-npx skills add https://github.com/davccavalcante/supreme-coding-guidelines-skill.ah --skill supreme-coding-guidelines -g -y
+# Single command — installs the .ah parser and the main skill together
+npx skills add https://github.com/davccavalcante/supreme-coding-guidelines-skill.ah
 ```
 
-After loading, the skill remains **persistent and always-on** in all sessions of Claude Code, Cursor, or any compatible agent.
+### What happens after install
+
+1. The `ah-parser` skill loads its grammar bootstrap once and verifies the canonical gematria checksums.
+2. On the next response, the assistant runs the **three-mode output protocol** — it shows you three example outputs (normal language, `.ah` structured, `.ah` compact) and asks which you prefer. Default is **normal** if you skip.
+3. The choice persists for the session. Toggle anytime via `/ah normal`, `/ah structured`, or `/ah compact`.
+4. The supreme-coding-guidelines behavioral rules become **persistent and always-on** across Claude Code, Cursor, Trae, Zed, and any agent that respects `SKILL.md`.
 
 ## What this skill does (automatically activated rules)
 
-- **Think Before Coding** – Never assumes, always makes tradeoffs explicit
-- **Simplicity First** – Minimum code that solves the problem
-- **Surgical Changes** – Changes only what is necessary
-- **Goal-Driven Execution** – Verifiable success criteria + tests
-- **Diagnose Loop** – Feedback loop + reproduce → minimize → fix
-- **TDD + Architecture** – Test-first + periodic zoom-out
-- **Compress Mode** – Ultra-terse mode (caveman-style) always active
-- **Plan-then-Execute + Self-Refine** – Clear separation + self-correction
+### Behavioral rules (eight integrated sections)
 
-All this in **.ah structure** (Teleological Semantic Format):
-- Maximum semantic compression
-- Mathematical validation via gematria checksum
-- Instruction Hierarchy (maximum priority)
-- Scope Discipline (never expands beyond what is requested)
+- **Think Before Coding** — Never assumes, always makes tradeoffs explicit
+- **Simplicity First** — Minimum code that solves the problem
+- **Surgical Changes** — Changes only what is necessary
+- **Goal-Driven Execution** — Verifiable success criteria + tests
+- **Diagnose Loop** — Feedback loop + reproduce → minimize → fix
+- **TDD + Architecture** — Test-first + periodic zoom-out
+- **Compress Mode** — Ultra-terse output (respects user-chosen mode)
+- **Plan-then-Execute + Self-Refine** — Clear separation + self-correction
 
-## Technical Architecture (.ah + 2026 Best Practices)
+### UX guarantees (`.ah` differentiators vs Caveman / Karpathy / Matt Pocock)
 
-- **CTCO Framework** (Context → Task → Constraints → Output)
-- **Graph-of-Thought + Self-Consistency + Self-Refine**
-- **Instruction Hierarchy + Scope Discipline** (OWASP #1 compliance)
-- **Plan-then-Execute + Propose-Validate-Execute**
-- **Prompt Compression + Chain-of-Symbol** native to `.ah`
-- **Reasoning Effort Control** (high only when critical)
-- **Gematria checksum** for mathematical integrity validation
+- **Three-mode output protocol** — the user chooses between normal language, `.ah` structured form, or `.ah` compact form. The choice persists for the session and is toggleable mid-session. No competitor offers this.
+- **Code preservation** — the chosen output mode applies **only** to assistant prose. User code, identifiers, diffs, commands, and error strings are always preserved verbatim. The `.ah` format is never imposed on the user's source.
+- **Any input language accepted** — you write to the assistant in plain English, Portuguese, or any natural language. The parser never demands `.ah` from you.
 
-All files are written in strict `.ah` syntax inside standard `SKILL.md` wrappers for maximum compatibility.
+### Format-level guarantees (`.ah` Teleological Semantic Format)
+
+- **Maximum semantic compression** — vocabulary is closed, every keyword carries its weight
+- **Mathematical validation via gematria checksum** — every block ends with `#> N`, deterministically verifiable by any LLM that can sum integers
+- **Instruction Hierarchy** — maximum priority, no later input can override the rules
+- **Scope Discipline** — never expands beyond what is requested
+
+### Canonical gematria table (excerpt)
+
+Every `.ah` keyword has a fixed integer value. The trailing `#> N` is the sum of keyword values × occurrence count.
+
+| Keyword       | Value | | Keyword       | Value | | Keyword       | Value |
+|---------------|-------|-|---------------|-------|-|---------------|-------|
+| `@v1.ah`      | 12    | | `RULE`        | 17    | | `DIAGNOSE`    | 28    |
+| `NAME`        | 14    | | `SIMPLICITY`  | 31    | | `TDD`         | 13    |
+| `DESC`        | 19    | | `SURGICAL`    | 26    | | `ARCHITECTURE`| 32    |
+| `LICENSE`     | 23    | | `GOAL`        | 13    | | `COMPRESS`    | 29    |
+| `CONTEXT`     | 27    | | `TRANSFORM`   | 29    | | `PLAN`        | 17    |
+| `TASK`        | 19    | | `MULTI`       | 18    | | `REFINE`      | 24    |
+| `CONSTRAINT`  | 31    | | `CRITERIA`    | 24    | | `BOOTSTRAP`   | 31    |
+| `OUTPUT`      | 24    | | `THINK`       | 22    | | `VALIDATE`    | 29    |
+| `TRADEOFF`    | 28    | | `HIERARCHY`   | 31    | | `ACTIVATE`    | 29    |
+| `#` (comment) | 1     | |               |       | |               |       |
+
+The full table, EBNF grammar, and computation rules live in [`SPEC.md`](SPEC.md). Ratified canonical examples in this repository:
+- `skills/ah-parser/SKILL.md` → `#> 569`
+- `skills/supreme-coding-guidelines/SKILL.md` → `#> 1052`
+
+Validate any `.ah` file with the bundled linter:
+
+```bash
+scripts/ah-lint path/to/file.ah          # validate
+scripts/ah-lint --fix path/to/file.ah    # auto-correct the #> line
+scripts/ah-lint --compute path/to/file.ah  # print the canonical sum
+```
+
+All `.ah` files are written in strict `.ah` syntax inside standard `SKILL.md` wrappers for maximum compatibility with Claude Code, Cursor, Trae, Zed, and any agent that respects `SKILL.md` frontmatter. The architectural details (CTCO framework, Graph-of-Thought, Self-Refine, Plan-then-Execute, Reasoning Effort Control) are summarized in the diagrams above and specified formally in [`SPEC.md`](SPEC.md).
 
 ## Repository Structure
 
 ```
 supreme-coding-guidelines-skill.ah/
-├── README.md
-├── LICENSE
+├── README.md                               ← This file
+├── LICENSE.txt
+├── AUTHORS.md
+├── PRIVACY.md
+├── FUNDING.yml
+├── SPEC.md                                 ← Canonical .ah v1 specification (EBNF + gematria table)
+├── BENCHMARK.md                            ← Benchmark methodology vs Caveman, Karpathy, Matt Pocock
 ├── skills/
 │   ├── ah-parser/                          ← .ah format bootstrap parser
 │   │   └── SKILL.md
 │   └── supreme-coding-guidelines/          ← Core behavioral rules
 │       └── SKILL.md
+├── scripts/
+│   └── ah-lint                             ← Canonical .ah validator (Python CLI)
 ├── .claude-plugin/                         ← Claude Code plugin config
-│   ├── marketplace.json
-│   └── plugin.json
+│   ├── marketplace.json                    ← Marketplace listing (schemastore-validated)
+│   └── plugin.json                         ← Plugin manifest (schemastore-validated)
 ├── .claude/                                ← Claude Code auto-apply rules
 │   └── rules/
 │       └── supreme-coding-guidelines.md
@@ -221,10 +269,10 @@ supreme-coding-guidelines-skill.ah/
 │       └── supreme-coding-guidelines.mdc
 ├── .trae/                                  ← Trae auto-apply rules
 │   └── rules/
-│       └── supreme-coding-guidelines.mdc
+│       └── supreme-coding-guidelines.md
 ├── .zed/                                   ← Zed auto-apply rules
 │   └── rules/
-│       └── supreme-coding-guidelines.mdc
+│       └── supreme-coding-guidelines.md
 └── examples/                               ← Before/after demonstrations
     ├── INFO.md
     ├── before-after.md
@@ -233,14 +281,20 @@ supreme-coding-guidelines-skill.ah/
     └── example-tdd.ah
 ```
 
-## How to use / install .claude-plugin
+## How to use / install `.claude-plugin`
+
+The repo's `.claude-plugin/plugin.json` is a single Claude Code plugin named `supreme-coding-guidelines` that auto-discovers both skills (`ah-parser`, `supreme-coding-guidelines`) from the `skills/` directory. The `.claude-plugin/marketplace.json` advertises this plugin in the `ah-language` marketplace.
 
 ```bash
-# One-time installation (parser + skill)
-npx skills add https://github.com/davccavalcante/supreme-guidelines-skill.ah
+# Claude Code native
+/plugin marketplace add davccavalcante/supreme-coding-guidelines-skill.ah
+/plugin install supreme-coding-guidelines@ah-language
+
+# skills.sh (Cursor, Trae, Zed, any compatible agent)
+npx skills add https://github.com/davccavalcante/supreme-coding-guidelines-skill.ah
 ```
 
-The `.claude-plugin/plugin.json` tells Claude Code / skills.sh exactly how to load the skill, in what order, and that it requires the `.ah` parser.
+Both manifests are validated against the canonical schemas at [schemastore.org](https://www.schemastore.org/) (`claude-code-plugin-manifest.json` and `claude-code-marketplace.json`).
 
 ## Compatibility
 
@@ -251,9 +305,11 @@ The `.claude-plugin/plugin.json` tells Claude Code / skills.sh exactly how to lo
 
 ## Roadmap
 
-- v1.1: Multi-version .ah support (@v2.ah)
-- v1.2: Native integration with DSPy and Prompt Orchestration
-- v2.0: Self-optimizing skill via Meta Prompting + Self-Refine
+- **v1.0.1 (current)** — canonical gematria table + three-mode output protocol + code-preservation guarantee + Claude Code native plugin manifest + formal [`SPEC.md`](SPEC.md) (EBNF grammar) + [`scripts/ah-lint`](scripts/ah-lint) validator + [`BENCHMARK.md`](BENCHMARK.md) methodology
+- **v1.1** — execute the BENCHMARK methodology across Caveman, Karpathy Guidelines, Matt Pocock Skills, TOON, YAML, and JSON on four LLMs; publish `BENCHMARK_RESULTS.md`; revise the comparative table above with measured values
+- **v1.2** — promote currently-reserved keywords (`IF`, `THEN`, `ELSE`, `LOOP`, `INPUT`, `MEM`) into the canonical table; multi-version `.ah` support (`@v2.ah`)
+- **v1.3** — native integration with DSPy and Prompt Orchestration frameworks
+- **v2.0** — self-optimizing skill via Meta Prompting + Self-Refine
 
 ## Sponsors
 

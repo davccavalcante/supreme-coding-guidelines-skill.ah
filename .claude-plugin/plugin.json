@@ -1,71 +1,27 @@
 {
-    "$schema": "https://skills.sh/schema/claude-plugin-v1.json",
-    "id": "supreme-coding-guidelines",
-    "name": "supreme-coding-guidelines",
-    "version": "1.0.0",
-    "description": "The definitive .ah skill combining extreme token compression, surgical coding behavior, disciplined diagnosis, TDD, and architectural control. Built on the Teleological Semantic Format (.ah) by David C. Cavalcante (creator of MAIC™, HIM™, and NHE™).",
-    "author": {
-        "name": "David C. Cavalcante",
-        "url": "https://github.com/davccavalcante",
-        "x": "@davccavalcante"
-    },
-    "license": "MIT",
-    "category": "coding-behavior",
-    "tags": [
-        "compression",
-        "surgical-coding",
-        "tdd",
-        "diagnose",
-        "architecture",
-        "token-economy",
-        "teleological-format",
-        "ah-format"
-    ],
-    "requires": [
-        "ah-parser"
-    ],
-    "skills": [
-        {
-            "id": "ah-parser",
-            "path": "../skills/ah-parser/SKILL.md",
-            "type": "parser",
-            "description": "Permanently activates the .ah (Teleological Semantic Format) for any LLM. Required for all .ah skills."
-        },
-        {
-            "id": "supreme-coding-guidelines",
-            "path": "../skills/supreme-coding-guidelines/SKILL.md",
-            "type": "behavior",
-            "description": "Maximum compression + surgical behavior + disciplined diagnosis + architectural control. Always-on after single load."
-        }
-    ],
-    "compatibility": {
-        "claude-code": "1.0+",
-        "cursor": "latest",
-        "skills-sh": "1.0+"
-    },
-    "installation": {
-        "command": "npx skills add https://github.com/davccavalcante/supreme-coding-guidelines-skill.ah",
-        "order": [
-            "ah-parser",
-            "supreme-coding-guidelines"
-        ]
-    },
-    "features": {
-        "persistent": true,
-        "always-on": true,
-        "instruction-hierarchy": true,
-        "scope-discipline": true,
-        "gematria-validation": true,
-        "graph-of-thought": true,
-        "self-refine": true
-    },
-    "metrics": {
-        "token-reduction": "82%",
-        "iteration-reduction": "65%",
-        "compatibility": "Claude Code, Cursor, any skills.sh agent"
-    },
-    "homepage": "https://github.com/davccavalcante/supreme-coding-guidelines-skill.ah",
-    "repository": "https://github.com/davccavalcante/supreme-coding-guidelines-skill.ah",
-    "created": "2026-05-01",
-    "updated": "2026-05-01"
+  "$schema": "https://www.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "supreme-coding-guidelines",
+  "version": "1.0.1",
+  "description": "The definitive .ah skill bundle for Claude Code. Combines extreme token compression, surgical coding behavior, disciplined diagnosis, TDD, and architectural control through the Teleological Semantic Format (.ah) created by David C. Cavalcante (originator of MAIC™, HIM™, and NHE™). Auto-discovers two skills from the skills/ directory: ah-parser (one-time bootstrap of the .ah grammar with three-mode output protocol) and supreme-coding-guidelines (always-on behavioral rules). User code is always preserved verbatim regardless of output mode.",
+  "author": {
+    "name": "David C. Cavalcante",
+    "url": "https://github.com/davccavalcante"
+  },
+  "homepage": "https://github.com/davccavalcante/supreme-coding-guidelines-skill.ah",
+  "repository": "https://github.com/davccavalcante/supreme-coding-guidelines-skill.ah",
+  "license": "MIT",
+  "keywords": [
+    "ah-format",
+    "teleological-format",
+    "token-economy",
+    "token-compression",
+    "surgical-coding",
+    "tdd",
+    "diagnose",
+    "architecture",
+    "gematria-checksum",
+    "coding-behavior",
+    "instruction-hierarchy",
+    "scope-discipline"
+  ]
 }

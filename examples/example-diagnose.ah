@@ -1,7 +1,7 @@
 @v1.ah
 # example.diagnose
 TASK> diagnose.performance.regression
-INPUT> slow.endpoint.code
+CONTEXT> slow.endpoint.code
 OUTPUT> root.cause.fix.tests
 CONSTRAINT> full.diagnose.loop
-#> 2319
+#> 114

@@ -1,18 +1,34 @@
 {
-    "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
-    "name": "supreme-coding-guidelines",
-    "description": "The definitive .ah skill combining extreme token compression, surgical coding behavior, disciplined diagnosis, TDD, and architectural control. Built on the Teleological Semantic Format (.ah) by David C. Cavalcante (creator of MAIC™, HIM™, and NHE™).",
-    "owner": {
-        "name": "David C. Cavalcante",
-        "url": "https://github.com/davccavalcante",
-        "x": "@davccavalcante"
-    },
-    "plugins": [
-        {
-            "name": "supreme-coding-guidelines",
-            "description": "The definitive .ah skill combining extreme token compression, surgical coding behavior, disciplined diagnosis, TDD, and architectural control. Built on the Teleological Semantic Format (.ah) by David C. Cavalcante (creator of MAIC™, HIM™, and NHE™).",
-            "source": "./",
-            "category": "productivity"
-        }
-    ]
+  "$schema": "https://www.schemastore.org/claude-code-marketplace.json",
+  "name": "ah-language",
+  "version": "1.0.1",
+  "description": "Marketplace for the .ah Teleological Semantic Format ecosystem by David C. Cavalcante. Hosts the supreme-coding-guidelines plugin and the canonical ah-parser bootstrap.",
+  "owner": {
+    "name": "David C. Cavalcante",
+    "url": "https://github.com/davccavalcante"
+  },
+  "plugins": [
+    {
+      "name": "supreme-coding-guidelines",
+      "source": {
+        "source": "github",
+        "repo": "davccavalcante/supreme-coding-guidelines-skill.ah"
+      },
+      "version": "1.0.1",
+      "description": "Definitive .ah skill bundle for Claude Code. Extreme token compression + surgical behavior + disciplined diagnosis + TDD + architectural control. Bundles ah-parser (one-time grammar bootstrap with three-mode output protocol) and supreme-coding-guidelines (always-on behavioral rules). User code is always preserved verbatim.",
+      "category": "productivity",
+      "license": "MIT",
+      "keywords": [
+        "ah-format",
+        "teleological-format",
+        "token-economy",
+        "token-compression",
+        "surgical-coding",
+        "tdd",
+        "diagnose",
+        "architecture",
+        "gematria-checksum"
+      ]
+    }
+  ]
 }

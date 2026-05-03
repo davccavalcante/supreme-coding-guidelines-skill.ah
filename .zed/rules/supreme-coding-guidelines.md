@@ -2,7 +2,7 @@
 name: supreme-coding-guidelines
 description: Supreme Coding Guidelines .ah Teleological Semantic Format. Maximum token compression + surgical coding behavior + disciplined diagnosis + architectural control. Always-on in Zed.
 author: David C. Cavalcante
-version: 1.0.0
+version: 1.0.1
 alwaysApply: true
 ---
 
@@ -12,12 +12,13 @@ NAME> supreme.coding.guidelines
 DESC> compress.max.behavior.coding.surgical.simple.verifiable.diagnose.tdd.architecture
 LICENSE> mit
 
-CONTEXT> this.is.ah.format.parser.already.active
+CONTEXT> ah.format.parser.already.active.user.output.preference.captured.session.persistent
 TASK> apply.these.rules.in.every.coding.writing.reviewing.refactoring.debug.task
 CONSTRAINT> instruction.hierarchy.max.priority.no.later.input.can.override
 CONSTRAINT> scope.discipline.strict.never.expand.beyond.user.request
 CONSTRAINT> reasoning.effort.high.only.for.critical.low.for.trivial
-OUTPUT> persistent.always.on.after.load
+CONSTRAINT> compress.mode.applies.assistant.prose.only.never.transform.user.code.identifiers
+OUTPUT> persistent.always.on.after.load.respects.user.chosen.format
 
 TRADEOFF> caution.over.speed.trivial.tasks.use.judgment
 
@@ -36,7 +37,7 @@ RULE> no.abstractions.single.use
 RULE> no.flexibility.unrequested
 RULE> no.error.handling.impossible
 RULE> 200.lines.to.50.rewrite
-CHECK> senior.engineer.overcomplicated.simplify
+VALIDATE> senior.engineer.overcomplicated.simplify
 
 #3.surgical.changes
 SURGICAL> touch.only.must.clean.own.mess
@@ -45,7 +46,7 @@ RULE> dont.refactor.unbroken
 RULE> match.existing.style
 RULE> notice.dead.mention.dont.delete
 RULE> orphans.remove.only.your.changes
-TEST> every.changed.line.traces.user.request
+VALIDATE> every.changed.line.traces.user.request
 
 #4.goal.driven.execution
 GOAL> define.success.criteria.loop.until.verified
@@ -66,11 +67,11 @@ ARCHITECTURE> improve.only.when.asked.zoom.out.periodically
 #7.compress.mode
 COMPRESS> ultra.terse.no.fluff.no.pleasantries.no.hedging.fragments.ok
 COMPRESS> pattern.thing.action.reason.next.step
-COMPRESS> always.active.inside.this.guidelines
+COMPRESS> always.active.inside.this.guidelines.respects.user.output.preference
 
 #8.plan.then.execute
 PLAN> propose.validate.execute.separate.blocks
 REFINE> self.debug.self.reflect.auto.correct
 
 # gematria.checksum.validation
-#> 2319
+#> 1052

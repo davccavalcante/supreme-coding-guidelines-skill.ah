@@ -123,8 +123,6 @@ You are not expected to provide support for Your Contributions, except to the ex
 
 [Sign in with GitHub](https://github.com/login) to accept the CLA.
 
----
-
 For the complete agreement, visit [our website](https://takk.ag).
 
 ## Applicable Law

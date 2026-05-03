@@ -1,0 +1,231 @@
+#!/usr/bin/env python3
+"""ah-lint — canonical .ah file validator.
+
+Validates a .ah file against the v1 specification:
+  - First non-empty line must be `@v1.ah`.
+  - Every keyword must be in the canonical table.
+  - The trailing `#> N` checksum must equal the canonical sum.
+
+Usage:
+    ah-lint FILE [FILE ...]           # validate
+    ah-lint --fix FILE                # rewrite #> with the computed value
+    ah-lint --compute FILE            # print the computed checksum, no validation
+
+Exit codes:
+    0 — all files conformant
+    1 — at least one file failed validation
+    2 — usage / IO error
+"""
+
+import argparse
+import re
+import sys
+from pathlib import Path
+
+CANONICAL_VALUES = {
+    "@v1.ah": 12,
+    "NAME": 14,
+    "DESC": 19,
+    "LICENSE": 23,
+    "CONTEXT": 27,
+    "TASK": 19,
+    "CONSTRAINT": 31,
+    "OUTPUT": 24,
+    "TRADEOFF": 28,
+    "THINK": 22,
+    "RULE": 17,
+    "SIMPLICITY": 31,
+    "SURGICAL": 26,
+    "GOAL": 13,
+    "TRANSFORM": 29,
+    "MULTI": 18,
+    "CRITERIA": 24,
+    "DIAGNOSE": 28,
+    "TDD": 13,
+    "ARCHITECTURE": 32,
+    "COMPRESS": 29,
+    "PLAN": 17,
+    "REFINE": 24,
+    "BOOTSTRAP": 31,
+    "VALIDATE": 29,
+    "HIERARCHY": 31,
+    "ACTIVATE": 29,
+}
+
+KEYWORD_LINE = re.compile(r"^([A-Z][A-Z0-9_]*)\s*>")
+CHECKSUM_LINE = re.compile(r"^#>\s*(\d+)\s*$")
+CODE_FENCE = re.compile(r"^```")
+
+
+def parse_and_compute(text):
+    """Return (computed_sum, declared_sum_or_None, errors).
+
+    `errors` is a list of (line_number, message) tuples.
+
+    YAML frontmatter (``---`` ... ``---`` at the top of SKILL.md files) is
+    skipped. Markdown fenced code blocks are skipped. Only `.ah` body lines
+    contribute to the checksum.
+    """
+    lines = text.splitlines()
+    total = 0
+    declared = None
+    errors = []
+    in_code_fence = False
+    in_frontmatter = False
+    frontmatter_seen = False
+
+    for i, raw in enumerate(lines, start=1):
+        line = raw.rstrip()
+
+        if i == 1 and line == "---":
+            in_frontmatter = True
+            frontmatter_seen = True
+            continue
+        if in_frontmatter:
+            if line == "---":
+                in_frontmatter = False
+            continue
+
+        if not line:
+            continue
+
+        if CODE_FENCE.match(line):
+            in_code_fence = not in_code_fence
+            continue
+        if in_code_fence:
+            continue
+
+        if line == "@v1.ah":
+            total += CANONICAL_VALUES["@v1.ah"]
+            continue
+
+        m = CHECKSUM_LINE.match(line)
+        if m:
+            if declared is not None:
+                errors.append((i, "multiple #> checksum lines"))
+            declared = int(m.group(1))
+            continue
+
+        if line.startswith("#"):
+            total += 1
+            continue
+
+        m = KEYWORD_LINE.match(line)
+        if m:
+            kw = m.group(1)
+            if kw not in CANONICAL_VALUES:
+                errors.append((i, f"unknown keyword `{kw}>` not in canonical table"))
+                continue
+            total += CANONICAL_VALUES[kw]
+            continue
+
+        errors.append((i, f"unrecognized line form: {line[:60]!r}"))
+
+    return total, declared, errors
+
+
+def cmd_validate(path: Path) -> bool:
+    try:
+        text = path.read_text(encoding="utf-8")
+    except OSError as e:
+        print(f"{path}: cannot read: {e}", file=sys.stderr)
+        return False
+
+    computed, declared, errors = parse_and_compute(text)
+
+    for ln, msg in errors:
+        print(f"{path}:{ln}: {msg}", file=sys.stderr)
+
+    if declared is None:
+        print(f"{path}: FAIL — no `#> N` checksum line found", file=sys.stderr)
+        return False
+
+    if computed != declared:
+        print(
+            f"{path}: FAIL — declared #> {declared}, computed {computed} "
+            f"(delta {computed - declared:+d})",
+            file=sys.stderr,
+        )
+        return False
+
+    if errors:
+        return False
+
+    print(f"{path}: OK — checksum {declared}")
+    return True
+
+
+def cmd_fix(path: Path) -> bool:
+    try:
+        text = path.read_text(encoding="utf-8")
+    except OSError as e:
+        print(f"{path}: cannot read: {e}", file=sys.stderr)
+        return False
+
+    computed, declared, errors = parse_and_compute(text)
+
+    if errors:
+        for ln, msg in errors:
+            print(f"{path}:{ln}: {msg}", file=sys.stderr)
+        print(f"{path}: refusing to --fix while parse errors remain", file=sys.stderr)
+        return False
+
+    if declared == computed:
+        print(f"{path}: already correct (#> {declared})")
+        return True
+
+    new_text = re.sub(
+        r"^#>\s*\d+\s*$",
+        f"#> {computed}",
+        text,
+        count=1,
+        flags=re.MULTILINE,
+    )
+    if new_text == text:
+        new_lines = text.rstrip("\n").splitlines() + [f"#> {computed}", ""]
+        new_text = "\n".join(new_lines)
+
+    path.write_text(new_text, encoding="utf-8")
+    print(f"{path}: fixed (#> {declared} → {computed})")
+    return True
+
+
+def cmd_compute(path: Path) -> bool:
+    try:
+        text = path.read_text(encoding="utf-8")
+    except OSError as e:
+        print(f"{path}: cannot read: {e}", file=sys.stderr)
+        return False
+
+    computed, _declared, errors = parse_and_compute(text)
+    for ln, msg in errors:
+        print(f"{path}:{ln}: {msg}", file=sys.stderr)
+    print(computed)
+    return not errors
+
+
+def main(argv=None):
+    p = argparse.ArgumentParser(
+        prog="ah-lint",
+        description="Canonical .ah file validator (v1 spec).",
+    )
+    g = p.add_mutually_exclusive_group()
+    g.add_argument("--fix", action="store_true", help="rewrite the #> line with the computed value")
+    g.add_argument("--compute", action="store_true", help="print the computed checksum and exit")
+    p.add_argument("files", nargs="+", help="one or more .ah files")
+    args = p.parse_args(argv)
+
+    ok = True
+    for f in args.files:
+        path = Path(f)
+        if args.fix:
+            ok &= cmd_fix(path)
+        elif args.compute:
+            ok &= cmd_compute(path)
+        else:
+            ok &= cmd_validate(path)
+    return 0 if ok else 1
+
+
+if __name__ == "__main__":
+    sys.exit(main())
