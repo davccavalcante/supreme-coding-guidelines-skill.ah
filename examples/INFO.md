@@ -19,4 +19,7 @@ Load the skill once and these examples work instantly.
 
 ## See also
 
-The same bundle also ships `supreme-project-audit` — an evidence-driven audit skill for Product / AI / ML / LLM engineers, LLM architects, and AI researchers. It is invoked on demand via `/supreme-project-audit`. See [`skills/supreme-project-audit/SKILL.md`](../skills/supreme-project-audit/SKILL.md) for the eight integrated audit dimensions (read-before-findings, evidence chain, severity discipline, coverage map, threat modeling, cost & reproducibility, compressed findings, plan-then-execute).
+The same bundle ships two additional on-demand skills for Product / AI / ML / LLM engineers, LLM architects, and AI researchers:
+
+- [`supreme-project-audit`](../skills/supreme-project-audit/SKILL.md) — invoke via `/supreme-project-audit` for evidence-driven audits. Eight dimensions: read-before-findings, evidence chain, severity discipline, coverage map, threat modeling, cost & reproducibility, compressed findings, plan-then-execute.
+- [`supreme-problem-solving`](../skills/supreme-problem-solving/SKILL.md) — invoke via `/supreme-problem-solving` to analyze, verify, diagnose, and solve specific problems (simple to complex) with a structured tabular deliverable. Eight sections: define-problem, reproduce, competing-hypotheses, instrument-evidence, minimum-invasive-fix, verify-and-validate, tabular-report, post-mortem.

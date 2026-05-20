@@ -1,8 +1,8 @@
 # Supreme Coding Guidelines Skill .ah
 
-![.AH](https://img.shields.io/badge/AH_Language-1.1.0-black.svg)
-![SKILL](https://img.shields.io/badge/SKILL-1.1.0-black.svg)
-![Version](https://img.shields.io/badge/version-1.1.0-black.svg)
+![.AH](https://img.shields.io/badge/AH_Language-1.2.0-black.svg)
+![SKILL](https://img.shields.io/badge/SKILL-1.2.0-black.svg)
+![Version](https://img.shields.io/badge/version-1.2.0-black.svg)
 ![License](https://img.shields.io/badge/license-MIT-black.svg)
 
 [![Star History Chart](https://api.star-history.com/svg?repos=davccavalcante/supreme-coding-guidelines-skill.ah&type=timeline&legend=top-left)](https://www.star-history.com/#davccavalcante/supreme-coding-guidelines-skill.ah&type=timeline&legend=top-left)
@@ -165,7 +165,7 @@ graph TD
 # 1. Add this repo as a Claude Code marketplace
 /plugin marketplace add davccavalcante/supreme-coding-guidelines-skill.ah
 
-# 2. Install the bundled plugin (auto-discovers ah-parser + supreme-coding-guidelines + supreme-project-audit)
+# 2. Install the bundled plugin (auto-discovers ah-parser + supreme-coding-guidelines + supreme-project-audit + supreme-problem-solving)
 /plugin install supreme-coding-guidelines@ah-language
 ```
 
@@ -183,16 +183,18 @@ npx skills add https://github.com/davccavalcante/supreme-coding-guidelines-skill
 3. The choice persists for the session. Toggle anytime via `/ah normal`, `/ah structured`, or `/ah compact`.
 4. The `supreme-coding-guidelines` behavioral rules become **persistent and always-on** across Claude Code, Cursor, Trae, Zed, and any agent that respects `SKILL.md`.
 5. The `supreme-project-audit` skill becomes **available on demand** — invoke `/supreme-project-audit` whenever you need an evidence-driven audit (Product Engineering, AI/ML/LLM systems, LLM architecture, AI research).
+6. The `supreme-problem-solving` skill becomes **available on demand** — invoke `/supreme-problem-solving` to analyze, verify, diagnose, and solve specific problems (simple to complex) with a structured tabular deliverable.
 
 ## What this bundle does
 
-The `supreme-coding-guidelines@ah-language` plugin bundles three skills with distinct activation models:
+The `supreme-coding-guidelines@ah-language` plugin bundles four skills with distinct activation models:
 
 | Skill | Activation | Purpose |
 |-------|------------|---------|
 | `ah-parser` | One-time bootstrap per session | Activates the `.ah` grammar, runs the three-mode output protocol, enforces code-preservation |
 | `supreme-coding-guidelines` | Persistent, always-on | Applies eight integrated behavioral rules to every coding, writing, reviewing, refactoring, and debugging task |
 | `supreme-project-audit` | On demand via `/supreme-project-audit` | Evidence-driven full-project audit for Product, AI, ML, LLM engineers, LLM architects, and AI researchers |
+| `supreme-problem-solving` | On demand via `/supreme-problem-solving` | Analyze, verify, diagnose, and solve specific problems (simple to complex) with a structured tabular deliverable |
 
 ### Behavioral rules of `supreme-coding-guidelines` (eight integrated sections)
 
@@ -215,6 +217,17 @@ The `supreme-coding-guidelines@ah-language` plugin bundles three skills with dis
 - **Cost, reproducibility, architecture** — Token / compute / latency budgets, seeds, pinned deps, versioned prompts, dependency graph between LLM calls
 - **Compress findings** — One row per finding: location, severity, evidence, cause, fix, owner, ETA
 - **Plan-then-execute audit** — Scope → investigate → draft → peer review → finalize
+
+### Problem-solving discipline of `supreme-problem-solving` (eight integrated sections)
+
+- **Define the problem precisely** — One-sentence statement of symptom, expected behavior, scope, severity before any action
+- **Reproduce before solving** — Deterministic, sub-30-second repro is the debugging superpower; no repro, no fix
+- **Competing hypotheses** — 3–5 ranked falsifiable hypotheses shown to user before testing any
+- **Instrument and gather evidence** — Hypothesis-into-probe, one variable at a time; per-role evidence types (token cost / drift / prompt diff)
+- **Apply minimum-invasive fix** — Smallest reversible change that makes the repro pass; feature flag + canary when production risk exists
+- **Verify and validate** — Regression test at correct seam + eval suite rerun for AI/ML/LLM + dark launch shadow compare for production
+- **Structured tabular report** — Deliverable is a markdown table: problem / repro / hypothesis / evidence / fix / verification / owner / ETA
+- **Post-mortem and prevention** — Identify the architectural or process gap that allowed the bug; recommend systemic prevention
 
 ### UX guarantees (`.ah` differentiators vs Caveman / Karpathy / Matt Pocock)
 
@@ -250,6 +263,7 @@ The full table, EBNF grammar, and computation rules live in [`SPEC.md`](SPEC.md)
 - `skills/ah-parser/SKILL.md` → `#> 569`
 - `skills/supreme-coding-guidelines/SKILL.md` → `#> 1052`
 - `skills/supreme-project-audit/SKILL.md` → `#> 1224`
+- `skills/supreme-problem-solving/SKILL.md` → `#> 1187`
 
 Validate any `.ah` file with the bundled linter:
 
@@ -277,7 +291,9 @@ supreme-coding-guidelines-skill.ah/
 │   │   └── SKILL.md
 │   ├── supreme-coding-guidelines/          ← Core behavioral rules (always-on)
 │   │   └── SKILL.md
-│   └── supreme-project-audit/              ← Evidence-driven audit (on demand)
+│   ├── supreme-project-audit/              ← Evidence-driven audit (on demand)
+│   │   └── SKILL.md
+│   └── supreme-problem-solving/            ← Diagnose-and-solve with tabular report (on demand)
 │       └── SKILL.md
 ├── scripts/
 │   └── ah-lint                             ← Canonical .ah validator (Python CLI)
@@ -306,7 +322,7 @@ supreme-coding-guidelines-skill.ah/
 
 ## How to use / install `.claude-plugin`
 
-The repo's `.claude-plugin/plugin.json` is a single Claude Code plugin named `supreme-coding-guidelines` that auto-discovers all three skills (`ah-parser`, `supreme-coding-guidelines`, `supreme-project-audit`) from the `skills/` directory. The `.claude-plugin/marketplace.json` advertises this plugin in the `ah-language` marketplace.
+The repo's `.claude-plugin/plugin.json` is a single Claude Code plugin named `supreme-coding-guidelines` that auto-discovers all four skills (`ah-parser`, `supreme-coding-guidelines`, `supreme-project-audit`, `supreme-problem-solving`) from the `skills/` directory. The `.claude-plugin/marketplace.json` advertises this plugin in the `ah-language` marketplace.
 
 ```bash
 # Claude Code native
@@ -328,11 +344,12 @@ Both manifests are validated against the canonical schemas at [schemastore.org](
 
 ## Roadmap
 
-- **v1.1.0 (current)** — adds `supreme-project-audit` skill for evidence-driven audits (Product, AI, ML, LLM engineers, LLM architects, AI researchers); existing skills, parser protocol, and SPEC unchanged
+- **v1.2.0 (current)** — adds `supreme-problem-solving` skill for analyze-verify-diagnose-solve workflows with a structured tabular deliverable; existing skills, parser protocol, and SPEC unchanged
+- **v1.1.0** — added `supreme-project-audit` skill for evidence-driven audits (Product, AI, ML, LLM engineers, LLM architects, AI researchers)
 - **v1.0.1** — canonical gematria table + three-mode output protocol + code-preservation guarantee + Claude Code native plugin manifest + formal [`SPEC.md`](SPEC.md) (EBNF grammar) + [`scripts/ah-lint`](scripts/ah-lint) validator + [`BENCHMARK.md`](BENCHMARK.md) methodology
-- **v1.2** — execute the BENCHMARK methodology across Caveman, Karpathy Guidelines, Matt Pocock Skills, TOON, YAML, and JSON on four LLMs; publish `BENCHMARK_RESULTS.md`; revise the comparative table above with measured values
-- **v1.3** — promote currently-reserved keywords (`IF`, `THEN`, `ELSE`, `LOOP`, `INPUT`, `MEM`) into the canonical table; multi-version `.ah` support (`@v2.ah`)
-- **v1.4** — native integration with DSPy and Prompt Orchestration frameworks
+- **v1.3** — execute the BENCHMARK methodology across Caveman, Karpathy Guidelines, Matt Pocock Skills, TOON, YAML, and JSON on four LLMs; publish `BENCHMARK_RESULTS.md`; revise the comparative table above with measured values
+- **v1.4** — promote currently-reserved keywords (`IF`, `THEN`, `ELSE`, `LOOP`, `INPUT`, `MEM`) into the canonical table; multi-version `.ah` support (`@v2.ah`)
+- **v1.5** — native integration with DSPy and Prompt Orchestration frameworks
 - **v2.0** — self-optimizing skill via Meta Prompting + Self-Refine
 
 ## Sponsors

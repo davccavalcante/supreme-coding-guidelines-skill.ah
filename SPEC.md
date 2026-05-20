@@ -1,7 +1,7 @@
 # `.ah` Language Specification
 
 ```
-Version       : 1.1.0
+Version       : 1.2.0
 Status        : Draft (canonical)
 Spec date     : 2026-05-03
 Author        : David C. Cavalcante (Takk8IS)
@@ -281,6 +281,10 @@ See `skills/ah-parser/SKILL.md` (`#> 569`).
 
 See `skills/supreme-project-audit/SKILL.md` (`#> 1224`).
 
+### 9.6 Reference — supreme-problem-solving
+
+See `skills/supreme-problem-solving/SKILL.md` (`#> 1187`).
+
 ## 10. Conformance
 
 A conformant `.ah` parser MUST:
@@ -307,13 +311,14 @@ A conformant `.ah` host (LLM agent) SHOULD additionally:
 
 ## 12. References
 
-- Reference implementation skills: [`skills/ah-parser/SKILL.md`](skills/ah-parser/SKILL.md), [`skills/supreme-coding-guidelines/SKILL.md`](skills/supreme-coding-guidelines/SKILL.md), [`skills/supreme-project-audit/SKILL.md`](skills/supreme-project-audit/SKILL.md)
+- Reference implementation skills: [`skills/ah-parser/SKILL.md`](skills/ah-parser/SKILL.md), [`skills/supreme-coding-guidelines/SKILL.md`](skills/supreme-coding-guidelines/SKILL.md), [`skills/supreme-project-audit/SKILL.md`](skills/supreme-project-audit/SKILL.md), [`skills/supreme-problem-solving/SKILL.md`](skills/supreme-problem-solving/SKILL.md)
 - Reference linter: [`scripts/ah-lint`](scripts/ah-lint)
 - Benchmark methodology: [`BENCHMARK.md`](BENCHMARK.md)
 - TOON format (heritage): https://github.com/toon-format/toon
 
 ## 13. Changelog
 
+- **1.2.0** (2026-05-03) — Bundle expansion: added `supreme-problem-solving` skill (analyze, verify, diagnose, and solve problems from simple to complex; output is a structured markdown table with columns problem / repro / hypothesis / evidence / fix / verification / owner / ETA). The skill uses only the canonical keyword set from §4; no language or grammar changes. Reference checksum: `skills/supreme-problem-solving/SKILL.md` → `#> 1187`.
 - **1.1.0** (2026-05-03) — Bundle expansion: added `supreme-project-audit` skill (evidence-driven audit for Product/AI/ML/LLM engineers, LLM architects, and AI researchers). The audit skill uses only the canonical keyword set from §4; no language or grammar changes. Reference checksum: `skills/supreme-project-audit/SKILL.md` → `#> 1224`.
 - **1.0.1** (2026-05-03) — Documentation revision. README claims tightened to match `BENCHMARK.md` methodology; obsolete competitive overclaims removed; file tree completed. No language or grammar changes; all checksums and conformance rules from 1.0.0 remain valid.
 - **1.0.0** (2026-05-03) — Initial canonical specification. Ratified the three foundational decisions: hierarchy = flat (MARK IV style), list separator = comma, comment marker = `#`. Replaced legacy `CHECK>`/`TEST>` with `VALIDATE>`. Established three-mode output protocol and code preservation rule.
