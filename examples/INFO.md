@@ -16,3 +16,7 @@ All examples assume the canonical install: `ah-parser` is loaded once per sessio
 - **Persistent across IDEs** — Claude Code, Cursor, Trae, Zed, and any agent that respects `SKILL.md`.
 
 Load the skill once and these examples work instantly.
+
+## See also
+
+The same bundle also ships `supreme-project-audit` — an evidence-driven audit skill for Product / AI / ML / LLM engineers, LLM architects, and AI researchers. It is invoked on demand via `/supreme-project-audit`. See [`skills/supreme-project-audit/SKILL.md`](../skills/supreme-project-audit/SKILL.md) for the eight integrated audit dimensions (read-before-findings, evidence chain, severity discipline, coverage map, threat modeling, cost & reproducibility, compressed findings, plan-then-execute).

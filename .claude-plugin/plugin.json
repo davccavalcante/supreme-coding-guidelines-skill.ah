@@ -1,8 +1,8 @@
 {
   "$schema": "https://www.schemastore.org/claude-code-plugin-manifest.json",
   "name": "supreme-coding-guidelines",
-  "version": "1.0.1",
-  "description": "The definitive .ah skill bundle for Claude Code. Combines extreme token compression, surgical coding behavior, disciplined diagnosis, TDD, and architectural control through the Teleological Semantic Format (.ah) created by David C. Cavalcante (originator of MAIC™, HIM™, and NHE™). Auto-discovers two skills from the skills/ directory: ah-parser (one-time bootstrap of the .ah grammar with three-mode output protocol) and supreme-coding-guidelines (always-on behavioral rules). User code is always preserved verbatim regardless of output mode.",
+  "version": "1.1.0",
+  "description": "The .ah skill bundle for Claude Code. Combines token compression, surgical coding behavior, disciplined diagnosis, TDD, architectural control, and full-project audit discipline through the Teleological Semantic Format (.ah) created by David C. Cavalcante (originator of MAIC™, HIM™, and NHE™). Auto-discovers three skills from the skills/ directory: ah-parser (one-time bootstrap of the .ah grammar with three-mode output protocol), supreme-coding-guidelines (always-on behavioral rules), and supreme-project-audit (on-demand evidence-driven audit for Product/AI/ML/LLM engineers, LLM architects, and AI researchers). User code is always preserved verbatim regardless of output mode.",
   "author": {
     "name": "David C. Cavalcante",
     "url": "https://github.com/davccavalcante"

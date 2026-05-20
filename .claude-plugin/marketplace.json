@@ -1,8 +1,8 @@
 {
   "$schema": "https://www.schemastore.org/claude-code-marketplace.json",
   "name": "ah-language",
-  "version": "1.0.1",
-  "description": "Marketplace for the .ah Teleological Semantic Format ecosystem by David C. Cavalcante. Hosts the supreme-coding-guidelines plugin and the canonical ah-parser bootstrap.",
+  "version": "1.1.0",
+  "description": "Marketplace for the .ah Teleological Semantic Format ecosystem by David C. Cavalcante. Hosts the supreme-coding-guidelines plugin (bundles the ah-parser bootstrap, the always-on coding-guidelines behavior, and the on-demand supreme-project-audit skill).",
   "owner": {
     "name": "David C. Cavalcante",
     "url": "https://github.com/davccavalcante"
@@ -14,8 +14,8 @@
         "source": "github",
         "repo": "davccavalcante/supreme-coding-guidelines-skill.ah"
       },
-      "version": "1.0.1",
-      "description": "Definitive .ah skill bundle for Claude Code. Extreme token compression + surgical behavior + disciplined diagnosis + TDD + architectural control. Bundles ah-parser (one-time grammar bootstrap with three-mode output protocol) and supreme-coding-guidelines (always-on behavioral rules). User code is always preserved verbatim.",
+      "version": "1.1.0",
+      "description": ".ah skill bundle for Claude Code. Token compression + surgical behavior + disciplined diagnosis + TDD + architectural control + evidence-driven audit. Bundles three skills: ah-parser (one-time grammar bootstrap with three-mode output protocol), supreme-coding-guidelines (always-on behavioral rules), and supreme-project-audit (on-demand audit for Product/AI/ML/LLM roles). User code is always preserved verbatim.",
       "category": "productivity",
       "license": "MIT",
       "keywords": [
