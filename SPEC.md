@@ -1,7 +1,7 @@
 # `.ah` Language Specification
 
 ```
-Version       : 1.2.0
+Version       : 1.3.0
 Status        : Draft (canonical)
 Spec date     : 2026-05-03
 Author        : David C. Cavalcante (Takk8IS)
@@ -285,6 +285,10 @@ See `skills/supreme-project-audit/SKILL.md` (`#> 1224`).
 
 See `skills/supreme-problem-solving/SKILL.md` (`#> 1187`).
 
+### 9.7 Reference — supreme-ai-engineering
+
+See `skills/supreme-ai-engineering/SKILL.md` (`#> 1227`).
+
 ## 10. Conformance
 
 A conformant `.ah` parser MUST:
@@ -311,13 +315,14 @@ A conformant `.ah` host (LLM agent) SHOULD additionally:
 
 ## 12. References
 
-- Reference implementation skills: [`skills/ah-parser/SKILL.md`](skills/ah-parser/SKILL.md), [`skills/supreme-coding-guidelines/SKILL.md`](skills/supreme-coding-guidelines/SKILL.md), [`skills/supreme-project-audit/SKILL.md`](skills/supreme-project-audit/SKILL.md), [`skills/supreme-problem-solving/SKILL.md`](skills/supreme-problem-solving/SKILL.md)
+- Reference implementation skills: [`skills/ah-parser/SKILL.md`](skills/ah-parser/SKILL.md), [`skills/supreme-coding-guidelines/SKILL.md`](skills/supreme-coding-guidelines/SKILL.md), [`skills/supreme-project-audit/SKILL.md`](skills/supreme-project-audit/SKILL.md), [`skills/supreme-problem-solving/SKILL.md`](skills/supreme-problem-solving/SKILL.md), [`skills/supreme-ai-engineering/SKILL.md`](skills/supreme-ai-engineering/SKILL.md)
 - Reference linter: [`scripts/ah-lint`](scripts/ah-lint)
 - Benchmark methodology: [`BENCHMARK.md`](BENCHMARK.md)
 - TOON format (heritage): https://github.com/toon-format/toon
 
 ## 13. Changelog
 
+- **1.3.0** (2026-05-20) — Bundle expansion: added `supreme-ai-engineering` skill (principal AI engineering discipline for Product/AI/ML/LLM engineers, LLM architects, AI researchers, QA engineers, and Software Quality engineers building production AI/ML/LLM/MLOps/LLMOps systems; enforces eval-first design, deterministic feedback loops, pipeline contracts, governance, reliability, QA rigor, and operational excellence). The skill uses only the canonical keyword set from §4; no language or grammar changes. Reference checksum: `skills/supreme-ai-engineering/SKILL.md` → `#> 1227`. Also added Kiro IDE support (`.kiro/rules/`) and mirrored all four behavioral skills (`supreme-coding-guidelines`, `supreme-project-audit`, `supreme-problem-solving`, `supreme-ai-engineering`) into all five IDE rule directories (Claude Code, Cursor, Trae, Zed, Kiro) — 20 mirror files total, each preserving the canonical gematria checksum of its source skill.
 - **1.2.0** (2026-05-03) — Bundle expansion: added `supreme-problem-solving` skill (analyze, verify, diagnose, and solve problems from simple to complex; output is a structured markdown table with columns problem / repro / hypothesis / evidence / fix / verification / owner / ETA). The skill uses only the canonical keyword set from §4; no language or grammar changes. Reference checksum: `skills/supreme-problem-solving/SKILL.md` → `#> 1187`.
 - **1.1.0** (2026-05-03) — Bundle expansion: added `supreme-project-audit` skill (evidence-driven audit for Product/AI/ML/LLM engineers, LLM architects, and AI researchers). The audit skill uses only the canonical keyword set from §4; no language or grammar changes. Reference checksum: `skills/supreme-project-audit/SKILL.md` → `#> 1224`.
 - **1.0.1** (2026-05-03) — Documentation revision. README claims tightened to match `BENCHMARK.md` methodology; obsolete competitive overclaims removed; file tree completed. No language or grammar changes; all checksums and conformance rules from 1.0.0 remain valid.

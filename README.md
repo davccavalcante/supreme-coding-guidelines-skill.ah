@@ -1,13 +1,13 @@
 # Supreme Coding Guidelines Skill .ah
 
-![.AH](https://img.shields.io/badge/AH_Language-1.2.0-black.svg)
-![SKILL](https://img.shields.io/badge/SKILL-1.2.0-black.svg)
-![Version](https://img.shields.io/badge/version-1.2.0-black.svg)
+![.AH](https://img.shields.io/badge/AH_Language-1.3.0-black.svg)
+![SKILL](https://img.shields.io/badge/SKILL-1.3.0-black.svg)
+![Version](https://img.shields.io/badge/version-1.3.0-black.svg)
 ![License](https://img.shields.io/badge/license-MIT-black.svg)
 
 [![Star History Chart](https://api.star-history.com/svg?repos=davccavalcante/supreme-coding-guidelines-skill.ah&type=timeline&legend=top-left)](https://www.star-history.com/#davccavalcante/supreme-coding-guidelines-skill.ah&type=timeline&legend=top-left)
 
-**A composable coding-behavior skill for Claude Code, Cursor, and modern LLM agents.**
+**A composable coding-behavior skill for Claude Code, Cursor, Trae, Zed, Kiro, and any modern LLM agent.**
 
 A single skill bundle that combines high token compression, surgical precision, disciplined diagnosis, and architectural control — all delivered in the new `.ah` (Teleological Semantic Format).
 
@@ -165,11 +165,11 @@ graph TD
 # 1. Add this repo as a Claude Code marketplace
 /plugin marketplace add davccavalcante/supreme-coding-guidelines-skill.ah
 
-# 2. Install the bundled plugin (auto-discovers ah-parser + supreme-coding-guidelines + supreme-project-audit + supreme-problem-solving)
+# 2. Install the bundled plugin (auto-discovers ah-parser + supreme-coding-guidelines + supreme-project-audit + supreme-problem-solving + supreme-ai-engineering)
 /plugin install supreme-coding-guidelines@ah-language
 ```
 
-### skills.sh (Cursor, Trae, Zed, any compatible agent)
+### skills.sh (Cursor, Trae, Zed, Kiro, any compatible agent)
 
 ```bash
 # Single command — installs the .ah parser and the main skill together
@@ -181,13 +181,14 @@ npx skills add https://github.com/davccavalcante/supreme-coding-guidelines-skill
 1. The `ah-parser` skill loads its grammar bootstrap once and verifies the canonical gematria checksums.
 2. On the next response, the assistant runs the **three-mode output protocol** — it shows you three example outputs (normal language, `.ah` structured, `.ah` compact) and asks which you prefer. Default is **normal** if you skip.
 3. The choice persists for the session. Toggle anytime via `/ah normal`, `/ah structured`, or `/ah compact`.
-4. The `supreme-coding-guidelines` behavioral rules become **persistent and always-on** across Claude Code, Cursor, Trae, Zed, and any agent that respects `SKILL.md`.
+4. The `supreme-coding-guidelines` behavioral rules become **persistent and always-on** across Claude Code, Cursor, Trae, Zed, Kiro, and any agent that respects `SKILL.md`.
 5. The `supreme-project-audit` skill becomes **available on demand** — invoke `/supreme-project-audit` whenever you need an evidence-driven audit (Product Engineering, AI/ML/LLM systems, LLM architecture, AI research).
 6. The `supreme-problem-solving` skill becomes **available on demand** — invoke `/supreme-problem-solving` to analyze, verify, diagnose, and solve specific problems (simple to complex) with a structured tabular deliverable.
+7. The `supreme-ai-engineering` skill becomes **available on demand** — invoke `/supreme-ai-engineering` when building, operating, or governing production AI/ML/LLM/MLOps/LLMOps systems (eval-first design, pipeline contracts, registry governance, production reliability, QA rigor, operational excellence).
 
 ## What this bundle does
 
-The `supreme-coding-guidelines@ah-language` plugin bundles four skills with distinct activation models:
+The `supreme-coding-guidelines@ah-language` plugin bundles five skills with distinct activation models:
 
 | Skill | Activation | Purpose |
 |-------|------------|---------|
@@ -195,6 +196,7 @@ The `supreme-coding-guidelines@ah-language` plugin bundles four skills with dist
 | `supreme-coding-guidelines` | Persistent, always-on | Applies eight integrated behavioral rules to every coding, writing, reviewing, refactoring, and debugging task |
 | `supreme-project-audit` | On demand via `/supreme-project-audit` | Evidence-driven full-project audit for Product, AI, ML, LLM engineers, LLM architects, and AI researchers |
 | `supreme-problem-solving` | On demand via `/supreme-problem-solving` | Analyze, verify, diagnose, and solve specific problems (simple to complex) with a structured tabular deliverable |
+| `supreme-ai-engineering` | On demand via `/supreme-ai-engineering` | Principal AI engineering discipline for production AI/ML/LLM/MLOps/LLMOps systems (eval-first design, pipeline contracts, governance, reliability, QA rigor, operational excellence) — serves Product, AI, ML, LLM engineers, LLM architects, AI researchers, QA engineers, and Software Quality engineers |
 
 ### Behavioral rules of `supreme-coding-guidelines` (eight integrated sections)
 
@@ -228,6 +230,17 @@ The `supreme-coding-guidelines@ah-language` plugin bundles four skills with dist
 - **Verify and validate** — Regression test at correct seam + eval suite rerun for AI/ML/LLM + dark launch shadow compare for production
 - **Structured tabular report** — Deliverable is a markdown table: problem / repro / hypothesis / evidence / fix / verification / owner / ETA
 - **Post-mortem and prevention** — Identify the architectural or process gap that allowed the bug; recommend systemic prevention
+
+### AI engineering discipline of `supreme-ai-engineering` (eight integrated sections)
+
+- **Understand the system before building** — Map data flows, model lineage, prompt registry, eval suite, dependency graph before the first line of code; identify SLOs/budgets in exact numbers
+- **Define success in measurable terms** — Every feature gets a golden eval set, acceptance threshold, cost budget, latency SLO (p50/p95/p99) before implementation starts; multi-objective (accuracy × latency × cost × safety × compliance)
+- **Build feedback loops first** — Eval harness, telemetry, drift detection, and alerting deployed before the first production user; per-role observability (LLM token/cost/trace, ML drift/skew, RAG retrieval precision/recall/faithfulness)
+- **Pipeline discipline with contracts and gates** — Data→feature→train→register→deploy→monitor; every stage has input contract, output contract, validation gate, documented failure mode
+- **Governance, architecture, and registry** — Prompt/model/tool registries with semantic versioning, cards, lineage, approval gates; A/B + canary + shadow + dark launch as default
+- **Production reliability, safety, and chaos** — Graceful degradation, circuit breakers, cost caps, layered prompt-injection defense, chaos testing for failover and adversarial inputs
+- **Quality engineering, testing, and research rigor** — Golden test sets + regression + fairness + safety eval gates in CI; per-role rules for LLM, ML, RAG; statistical significance + ablation completeness + dataset contamination for researchers
+- **Operational excellence and continuous refinement** — Observability + runbooks + on-call rotation + SLO review cadence before launch; post-incident review feeds eval set expansion and guardrail tightening
 
 ### UX guarantees (`.ah` differentiators vs Caveman / Karpathy / Matt Pocock)
 
@@ -264,6 +277,7 @@ The full table, EBNF grammar, and computation rules live in [`SPEC.md`](SPEC.md)
 - `skills/supreme-coding-guidelines/SKILL.md` → `#> 1052`
 - `skills/supreme-project-audit/SKILL.md` → `#> 1224`
 - `skills/supreme-problem-solving/SKILL.md` → `#> 1187`
+- `skills/supreme-ai-engineering/SKILL.md` → `#> 1227`
 
 Validate any `.ah` file with the bundled linter:
 
@@ -273,7 +287,19 @@ scripts/ah-lint --fix path/to/file.ah    # auto-correct the #> line
 scripts/ah-lint --compute path/to/file.ah  # print the canonical sum
 ```
 
-All `.ah` files are written in strict `.ah` syntax inside standard `SKILL.md` wrappers for maximum compatibility with Claude Code, Cursor, Trae, Zed, and any agent that respects `SKILL.md` frontmatter. The architectural details (CTCO framework, Graph-of-Thought, Self-Refine, Plan-then-Execute, Reasoning Effort Control) are summarized in the diagrams above and specified formally in [`SPEC.md`](SPEC.md).
+All `.ah` files are written in strict `.ah` syntax inside standard `SKILL.md` wrappers for maximum compatibility with Claude Code, Cursor, Trae, Zed, Kiro, and any agent that respects `SKILL.md` frontmatter. The architectural details (CTCO framework, Graph-of-Thought, Self-Refine, Plan-then-Execute, Reasoning Effort Control) are summarized in the diagrams above and specified formally in [`SPEC.md`](SPEC.md).
+
+Every behavioral skill is mirrored into five IDE rule directories so that auto-apply works natively across editors:
+
+| IDE | Directory | Format | Mirrored skills |
+|-----|-----------|--------|-----------------|
+| Claude Code | `.claude/rules/` | `.md` | 4 |
+| Cursor | `.cursor/rules/` | `.mdc` | 4 |
+| Trae | `.trae/rules/` | `.md` | 4 |
+| Zed | `.zed/rules/` | `.md` | 4 |
+| Kiro | `.kiro/rules/` | `.md` | 4 |
+
+The four mirrored skills are `supreme-coding-guidelines` (`alwaysApply: true`), `supreme-project-audit`, `supreme-problem-solving`, and `supreme-ai-engineering` (each with `alwaysApply: false` for on-demand invocation). The `ah-parser` is a session bootstrap and is loaded via the plugin, not as an IDE rule.
 
 ## Repository Structure
 
@@ -293,25 +319,45 @@ supreme-coding-guidelines-skill.ah/
 │   │   └── SKILL.md
 │   ├── supreme-project-audit/              ← Evidence-driven audit (on demand)
 │   │   └── SKILL.md
-│   └── supreme-problem-solving/            ← Diagnose-and-solve with tabular report (on demand)
+│   ├── supreme-problem-solving/            ← Diagnose-and-solve with tabular report (on demand)
+│   │   └── SKILL.md
+│   └── supreme-ai-engineering/             ← Principal AI/ML/LLM engineering discipline (on demand)
 │       └── SKILL.md
 ├── scripts/
 │   └── ah-lint                             ← Canonical .ah validator (Python CLI)
 ├── .claude-plugin/                         ← Claude Code plugin config
 │   ├── marketplace.json                    ← Marketplace listing (schemastore-validated)
 │   └── plugin.json                         ← Plugin manifest (schemastore-validated)
-├── .claude/                                ← Claude Code auto-apply rules
+├── .claude/                                ← Claude Code auto-apply rules (4 skills mirrored)
 │   └── rules/
-│       └── supreme-coding-guidelines.md
-├── .cursor/                                ← Cursor auto-apply rules
+│       ├── supreme-coding-guidelines.md
+│       ├── supreme-project-audit.md
+│       ├── supreme-problem-solving.md
+│       └── supreme-ai-engineering.md
+├── .cursor/                                ← Cursor auto-apply rules (4 skills mirrored)
 │   └── rules/
-│       └── supreme-coding-guidelines.mdc
-├── .trae/                                  ← Trae auto-apply rules
+│       ├── supreme-coding-guidelines.mdc
+│       ├── supreme-project-audit.mdc
+│       ├── supreme-problem-solving.mdc
+│       └── supreme-ai-engineering.mdc
+├── .trae/                                  ← Trae auto-apply rules (4 skills mirrored)
 │   └── rules/
-│       └── supreme-coding-guidelines.md
-├── .zed/                                   ← Zed auto-apply rules
+│       ├── supreme-coding-guidelines.md
+│       ├── supreme-project-audit.md
+│       ├── supreme-problem-solving.md
+│       └── supreme-ai-engineering.md
+├── .zed/                                   ← Zed auto-apply rules (4 skills mirrored)
 │   └── rules/
-│       └── supreme-coding-guidelines.md
+│       ├── supreme-coding-guidelines.md
+│       ├── supreme-project-audit.md
+│       ├── supreme-problem-solving.md
+│       └── supreme-ai-engineering.md
+├── .kiro/                                  ← Kiro auto-apply rules (4 skills mirrored, new in v1.3.0)
+│   └── rules/
+│       ├── supreme-coding-guidelines.md
+│       ├── supreme-project-audit.md
+│       ├── supreme-problem-solving.md
+│       └── supreme-ai-engineering.md
 └── examples/                               ← Before/after demonstrations
     ├── INFO.md
     ├── before-after.md
@@ -322,14 +368,14 @@ supreme-coding-guidelines-skill.ah/
 
 ## How to use / install `.claude-plugin`
 
-The repo's `.claude-plugin/plugin.json` is a single Claude Code plugin named `supreme-coding-guidelines` that auto-discovers all four skills (`ah-parser`, `supreme-coding-guidelines`, `supreme-project-audit`, `supreme-problem-solving`) from the `skills/` directory. The `.claude-plugin/marketplace.json` advertises this plugin in the `ah-language` marketplace.
+The repo's `.claude-plugin/plugin.json` is a single Claude Code plugin named `supreme-coding-guidelines` that auto-discovers all five skills (`ah-parser`, `supreme-coding-guidelines`, `supreme-project-audit`, `supreme-problem-solving`, `supreme-ai-engineering`) from the `skills/` directory. The `.claude-plugin/marketplace.json` advertises this plugin in the `ah-language` marketplace.
 
 ```bash
 # Claude Code native
 /plugin marketplace add davccavalcante/supreme-coding-guidelines-skill.ah
 /plugin install supreme-coding-guidelines@ah-language
 
-# skills.sh (Cursor, Trae, Zed, any compatible agent)
+# skills.sh (Cursor, Trae, Zed, Kiro, any compatible agent)
 npx skills add https://github.com/davccavalcante/supreme-coding-guidelines-skill.ah
 ```
 
@@ -337,14 +383,18 @@ Both manifests are validated against the canonical schemas at [schemastore.org](
 
 ## Compatibility
 
-- Claude Code (native)
-- Cursor (automatic rules)
+- Claude Code (native plugin + `.claude/rules/` auto-apply)
+- Cursor (`.cursor/rules/*.mdc` auto-apply)
+- Trae (`.trae/rules/` auto-apply)
+- Zed (`.zed/rules/` auto-apply)
+- Kiro (`.kiro/rules/` auto-apply, added in v1.3.0)
 - Any agent that supports skills.sh
 - Works with MCP tools, task budgets, and Opus 4.7 quota limits
 
 ## Roadmap
 
-- **v1.2.0 (current)** — adds `supreme-problem-solving` skill for analyze-verify-diagnose-solve workflows with a structured tabular deliverable; existing skills, parser protocol, and SPEC unchanged
+- **v1.3.0 (current)** — adds `supreme-ai-engineering` skill: principal AI engineering discipline for Product/AI/ML/LLM engineers, LLM architects, AI researchers, QA engineers, and Software Quality engineers building production AI/ML/LLM/MLOps/LLMOps systems (eval-first design, pipeline contracts, governance, reliability, QA rigor, operational excellence); existing skills, parser protocol, and SPEC unchanged
+- **v1.2.0** — added `supreme-problem-solving` skill for analyze-verify-diagnose-solve workflows with a structured tabular deliverable
 - **v1.1.0** — added `supreme-project-audit` skill for evidence-driven audits (Product, AI, ML, LLM engineers, LLM architects, AI researchers)
 - **v1.0.1** — canonical gematria table + three-mode output protocol + code-preservation guarantee + Claude Code native plugin manifest + formal [`SPEC.md`](SPEC.md) (EBNF grammar) + [`scripts/ah-lint`](scripts/ah-lint) validator + [`BENCHMARK.md`](BENCHMARK.md) methodology
 - **v1.3** — execute the BENCHMARK methodology across Caveman, Karpathy Guidelines, Matt Pocock Skills, TOON, YAML, and JSON on four LLMs; publish `BENCHMARK_RESULTS.md`; revise the comparative table above with measured values

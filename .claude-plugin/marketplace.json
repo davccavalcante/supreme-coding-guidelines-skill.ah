@@ -1,8 +1,8 @@
 {
   "$schema": "https://www.schemastore.org/claude-code-marketplace.json",
   "name": "ah-language",
-  "version": "1.2.0",
-  "description": "Marketplace for the .ah Teleological Semantic Format ecosystem by David C. Cavalcante. Hosts the supreme-coding-guidelines plugin (bundles the ah-parser bootstrap, the always-on coding-guidelines behavior, the on-demand supreme-project-audit skill, and the on-demand supreme-problem-solving skill).",
+  "version": "1.3.0",
+  "description": "Marketplace for the .ah Teleological Semantic Format ecosystem by David C. Cavalcante. Hosts the supreme-coding-guidelines plugin (bundles the ah-parser bootstrap, the always-on coding-guidelines behavior, the on-demand supreme-project-audit skill, the on-demand supreme-problem-solving skill, and the on-demand supreme-ai-engineering skill).",
   "owner": {
     "name": "David C. Cavalcante",
     "url": "https://github.com/davccavalcante"
@@ -14,8 +14,8 @@
         "source": "github",
         "repo": "davccavalcante/supreme-coding-guidelines-skill.ah"
       },
-      "version": "1.2.0",
-      "description": ".ah skill bundle for Claude Code. Token compression + surgical behavior + disciplined diagnosis + TDD + architectural control + evidence-driven audit + genuine problem-solving with tabular reports. Bundles four skills: ah-parser (one-time grammar bootstrap with three-mode output protocol), supreme-coding-guidelines (always-on behavioral rules), supreme-project-audit (on-demand audit for Product/AI/ML/LLM roles), and supreme-problem-solving (on-demand analyze-verify-diagnose-solve workflow with tabular deliverable). User code is always preserved verbatim.",
+      "version": "1.3.0",
+      "description": ".ah skill bundle for Claude Code. Token compression + surgical behavior + disciplined diagnosis + TDD + architectural control + evidence-driven audit + genuine problem-solving with tabular reports + principal AI engineering discipline for production AI/ML/LLM systems. Bundles five skills: ah-parser (one-time grammar bootstrap with three-mode output protocol), supreme-coding-guidelines (always-on behavioral rules), supreme-project-audit (on-demand audit for Product/AI/ML/LLM roles), supreme-problem-solving (on-demand analyze-verify-diagnose-solve workflow with tabular deliverable), and supreme-ai-engineering (on-demand eval-first AI/ML/LLM/MLOps/LLMOps engineering discipline). User code is always preserved verbatim.",
       "category": "productivity",
       "license": "MIT",
       "keywords": [

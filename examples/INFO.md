@@ -13,13 +13,14 @@ All examples assume the canonical install: `ah-parser` is loaded once per sessio
 - **Code is always verbatim** — the chosen mode applies only to assistant prose. User code, diffs, commands, identifiers, and error strings are never reformatted into dot-notation.
 - **Mathematical integrity** — every `.ah` file ends with `#> N`, the gematria checksum. The LLM verifies it on read and rejects (or auto-corrects) any block whose computed sum does not match the declared value.
 - **Surgical, verifiable, disciplined behavior** — eight integrated rule sections cover think-before-coding, simplicity-first, surgical changes, goal-driven execution, diagnose loop, TDD, compress mode, and plan-then-execute.
-- **Persistent across IDEs** — Claude Code, Cursor, Trae, Zed, and any agent that respects `SKILL.md`.
+- **Persistent across IDEs** — Claude Code, Cursor, Trae, Zed, Kiro, and any agent that respects `SKILL.md`. Four skills mirrored into each IDE's auto-apply rule directory.
 
 Load the skill once and these examples work instantly.
 
 ## See also
 
-The same bundle ships two additional on-demand skills for Product / AI / ML / LLM engineers, LLM architects, and AI researchers:
+The same bundle ships three additional on-demand skills for Product / AI / ML / LLM engineers, LLM architects, AI researchers, QA engineers, and Software Quality engineers:
 
 - [`supreme-project-audit`](../skills/supreme-project-audit/SKILL.md) — invoke via `/supreme-project-audit` for evidence-driven audits. Eight dimensions: read-before-findings, evidence chain, severity discipline, coverage map, threat modeling, cost & reproducibility, compressed findings, plan-then-execute.
 - [`supreme-problem-solving`](../skills/supreme-problem-solving/SKILL.md) — invoke via `/supreme-problem-solving` to analyze, verify, diagnose, and solve specific problems (simple to complex) with a structured tabular deliverable. Eight sections: define-problem, reproduce, competing-hypotheses, instrument-evidence, minimum-invasive-fix, verify-and-validate, tabular-report, post-mortem.
+- [`supreme-ai-engineering`](../skills/supreme-ai-engineering/SKILL.md) — invoke via `/supreme-ai-engineering` for principal AI engineering discipline on production AI/ML/LLM/MLOps/LLMOps systems. Eight sections: understand-before-building, measurable-success, feedback-loops-first, pipeline-contracts-and-gates, governance-architecture-and-registry, production-reliability-safety-and-chaos, quality-engineering-and-research-rigor, operational-excellence-and-refinement.
