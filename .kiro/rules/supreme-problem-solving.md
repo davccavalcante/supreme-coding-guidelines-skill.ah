@@ -2,7 +2,7 @@
 name: supreme-problem-solving
 description: Genuine problem-solving discipline for Product/AI/ML/LLM engineers, LLM architects, AI researchers. Precise problem statements, reliable reproduction, 3-5 ranked falsifiable hypotheses, instrumented evidence, minimum-invasive reversible fixes, structured tabular deliverable. On-demand in Kiro.
 author: David C. Cavalcante
-version: 1.3.0
+version: 1.4.0
 alwaysApply: false
 ---
 

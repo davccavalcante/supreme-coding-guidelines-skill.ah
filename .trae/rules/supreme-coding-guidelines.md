@@ -2,7 +2,7 @@
 name: supreme-coding-guidelines
 description: Maximum semantic compression + surgical coding behavior + disciplined diagnosis + TDD + architectural control. Built on the Teleological Semantic Format (.ah). Always-on in Trae.
 author: David C. Cavalcante
-version: 1.3.0
+version: 1.4.0
 alwaysApply: true
 ---
 

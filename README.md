@@ -1,8 +1,8 @@
 # Supreme Coding Guidelines Skill .ah
 
-![.AH](https://img.shields.io/badge/AH_Language-1.3.0-black.svg)
-![SKILL](https://img.shields.io/badge/SKILL-1.3.0-black.svg)
-![Version](https://img.shields.io/badge/version-1.3.0-black.svg)
+![.AH](https://img.shields.io/badge/AH_Language-1.4.0-black.svg)
+![SKILL](https://img.shields.io/badge/SKILL-1.4.0-black.svg)
+![Version](https://img.shields.io/badge/version-1.4.0-black.svg)
 ![License](https://img.shields.io/badge/license-MIT-black.svg)
 
 [![Star History Chart](https://api.star-history.com/svg?repos=davccavalcante/supreme-coding-guidelines-skill.ah&type=timeline&legend=top-left)](https://www.star-history.com/#davccavalcante/supreme-coding-guidelines-skill.ah&type=timeline&legend=top-left)
@@ -165,7 +165,7 @@ graph TD
 # 1. Add this repo as a Claude Code marketplace
 /plugin marketplace add davccavalcante/supreme-coding-guidelines-skill.ah
 
-# 2. Install the bundled plugin (auto-discovers ah-parser + supreme-coding-guidelines + supreme-project-audit + supreme-problem-solving + supreme-ai-engineering)
+# 2. Install the bundled plugin (auto-discovers ah-parser + supreme-coding-guidelines + supreme-project-audit + supreme-problem-solving + supreme-ai-engineering + supreme-npm-node)
 /plugin install supreme-coding-guidelines@ah-language
 ```
 
@@ -185,10 +185,11 @@ npx skills add https://github.com/davccavalcante/supreme-coding-guidelines-skill
 5. The `supreme-project-audit` skill becomes **available on demand** — invoke `/supreme-project-audit` whenever you need an evidence-driven audit (Product Engineering, AI/ML/LLM systems, LLM architecture, AI research).
 6. The `supreme-problem-solving` skill becomes **available on demand** — invoke `/supreme-problem-solving` to analyze, verify, diagnose, and solve specific problems (simple to complex) with a structured tabular deliverable.
 7. The `supreme-ai-engineering` skill becomes **available on demand** — invoke `/supreme-ai-engineering` when building, operating, or governing production AI/ML/LLM/MLOps/LLMOps systems (eval-first design, pipeline contracts, registry governance, production reliability, QA rigor, operational excellence).
+8. The `supreme-npm-node` skill becomes **available on demand** — invoke `/supreme-npm-node` for NPM/NPX/Node/TypeScript work with a latest-version-always policy (`ncu -u` before every install), strict-mode TypeScript, package publishing discipline, OIDC provenance, and continuous upgrade cadence.
 
 ## What this bundle does
 
-The `supreme-coding-guidelines@ah-language` plugin bundles five skills with distinct activation models:
+The `supreme-coding-guidelines@ah-language` plugin bundles six skills with distinct activation models:
 
 | Skill | Activation | Purpose |
 |-------|------------|---------|
@@ -197,6 +198,7 @@ The `supreme-coding-guidelines@ah-language` plugin bundles five skills with dist
 | `supreme-project-audit` | On demand via `/supreme-project-audit` | Evidence-driven full-project audit for Product, AI, ML, LLM engineers, LLM architects, and AI researchers |
 | `supreme-problem-solving` | On demand via `/supreme-problem-solving` | Analyze, verify, diagnose, and solve specific problems (simple to complex) with a structured tabular deliverable |
 | `supreme-ai-engineering` | On demand via `/supreme-ai-engineering` | Principal AI engineering discipline for production AI/ML/LLM/MLOps/LLMOps systems (eval-first design, pipeline contracts, governance, reliability, QA rigor, operational excellence) — serves Product, AI, ML, LLM engineers, LLM architects, AI researchers, QA engineers, and Software Quality engineers |
+| `supreme-npm-node` | On demand via `/supreme-npm-node` | Principal NPM/NPX/NPMJS/Node engineering discipline (latest-version-always via `ncu -u`, TypeScript strict mode with all checks, package publishing with OIDC provenance, supply-chain audit gates, pnpm workspaces, continuous upgrade cadence) — serves Tech Leads, DevOps, Backend, Frontend, Product/AI/ML/LLM engineers, LLM architects, AI researchers, QA engineers, and Software Quality engineers |
 
 ### Behavioral rules of `supreme-coding-guidelines` (eight integrated sections)
 
@@ -230,6 +232,17 @@ The `supreme-coding-guidelines@ah-language` plugin bundles five skills with dist
 - **Verify and validate** — Regression test at correct seam + eval suite rerun for AI/ML/LLM + dark launch shadow compare for production
 - **Structured tabular report** — Deliverable is a markdown table: problem / repro / hypothesis / evidence / fix / verification / owner / ETA
 - **Post-mortem and prevention** — Identify the architectural or process gap that allowed the bug; recommend systemic prevention
+
+### NPM/Node discipline of `supreme-npm-node` (eight integrated sections)
+
+- **Understand the NPM/Node ecosystem before touching** — Map runtime version, package manager, workspace layout, tsconfig before first install; distinguish dependencies/devDependencies/peerDependencies/optionalDependencies
+- **Always-latest dependencies via `ncu -u`** — `ncu -u` is mandatory before any `npm install`; never pin to definitive versions; weekly cadence minimum, daily during active development; audit + tests + types + lint + bundle-size gates before merge
+- **TypeScript strict mode maximum** — `strict` + `noUncheckedIndexedAccess` + `exactOptionalPropertyTypes` + `noImplicitOverride` + `useUnknownInCatchVariables` all enabled; `satisfies` over `as`; `unknown` over `any`; discriminated unions over optional flags; branded types for opaque identifiers
+- **Development workflow scripts** — Standard `dev`/`build`/`test`/`lint`/`type-check`/`format` scripts; `type-check` precedes `test` precedes `build` in CI; `tsx` for runners, `tsdown`/`tsup` for builds, `vitest` or Node built-in test runner; pnpm for monorepo workspaces
+- **Package publishing discipline (architecture)** — `files` allowlist over `.npmignore`; `exports` field with `import`/`require`/`types` conditional; `engines.node` matches tested versions; `npm pack --dry-run` preview mandatory; OIDC provenance attestation in GitHub Actions
+- **Production reliability and supply-chain security** — `npm audit` gate before publish; lockfile committed to git always; review postinstall scripts; use `--ignore-scripts` in CI unless allowlisted; `dist-tag next/beta/canary` for previews
+- **Quality gates before publish** — Type-check, lint, test, audit, bundle-size, attw (Are The Types Wrong), changelog (via changesets/release-please) all green in CI before `npm publish`; semantic versioning bump must match the actual change
+- **Maintenance and continuous upgrade cycle** — Weekly `ncu -u` cadence + Renovate/Dependabot; codemods for breaking upgrades; regression test, docs, and `next` dist-tag publish before promoting to `latest`
 
 ### AI engineering discipline of `supreme-ai-engineering` (eight integrated sections)
 
@@ -278,6 +291,7 @@ The full table, EBNF grammar, and computation rules live in [`SPEC.md`](SPEC.md)
 - `skills/supreme-project-audit/SKILL.md` → `#> 1224`
 - `skills/supreme-problem-solving/SKILL.md` → `#> 1187`
 - `skills/supreme-ai-engineering/SKILL.md` → `#> 1227`
+- `skills/supreme-npm-node/SKILL.md` → `#> 1269`
 
 Validate any `.ah` file with the bundled linter:
 
@@ -321,43 +335,50 @@ supreme-coding-guidelines-skill.ah/
 │   │   └── SKILL.md
 │   ├── supreme-problem-solving/            ← Diagnose-and-solve with tabular report (on demand)
 │   │   └── SKILL.md
-│   └── supreme-ai-engineering/             ← Principal AI/ML/LLM engineering discipline (on demand)
+│   ├── supreme-ai-engineering/             ← Principal AI/ML/LLM engineering discipline (on demand)
+│   │   └── SKILL.md
+│   └── supreme-npm-node/                   ← NPM/NPX/Node/TypeScript discipline with latest-always policy (on demand)
 │       └── SKILL.md
 ├── scripts/
 │   └── ah-lint                             ← Canonical .ah validator (Python CLI)
 ├── .claude-plugin/                         ← Claude Code plugin config
 │   ├── marketplace.json                    ← Marketplace listing (schemastore-validated)
 │   └── plugin.json                         ← Plugin manifest (schemastore-validated)
-├── .claude/                                ← Claude Code auto-apply rules (4 skills mirrored)
+├── .claude/                                ← Claude Code auto-apply rules (5 skills mirrored)
 │   └── rules/
 │       ├── supreme-coding-guidelines.md
 │       ├── supreme-project-audit.md
 │       ├── supreme-problem-solving.md
-│       └── supreme-ai-engineering.md
-├── .cursor/                                ← Cursor auto-apply rules (4 skills mirrored)
+│       ├── supreme-ai-engineering.md
+│       └── supreme-npm-node.md
+├── .cursor/                                ← Cursor auto-apply rules (5 skills mirrored)
 │   └── rules/
 │       ├── supreme-coding-guidelines.mdc
 │       ├── supreme-project-audit.mdc
 │       ├── supreme-problem-solving.mdc
-│       └── supreme-ai-engineering.mdc
-├── .trae/                                  ← Trae auto-apply rules (4 skills mirrored)
+│       ├── supreme-ai-engineering.mdc
+│       └── supreme-npm-node.mdc
+├── .trae/                                  ← Trae auto-apply rules (5 skills mirrored)
 │   └── rules/
 │       ├── supreme-coding-guidelines.md
 │       ├── supreme-project-audit.md
 │       ├── supreme-problem-solving.md
-│       └── supreme-ai-engineering.md
-├── .zed/                                   ← Zed auto-apply rules (4 skills mirrored)
+│       ├── supreme-ai-engineering.md
+│       └── supreme-npm-node.md
+├── .zed/                                   ← Zed auto-apply rules (5 skills mirrored)
 │   └── rules/
 │       ├── supreme-coding-guidelines.md
 │       ├── supreme-project-audit.md
 │       ├── supreme-problem-solving.md
-│       └── supreme-ai-engineering.md
-├── .kiro/                                  ← Kiro auto-apply rules (4 skills mirrored, new in v1.3.0)
+│       ├── supreme-ai-engineering.md
+│       └── supreme-npm-node.md
+├── .kiro/                                  ← Kiro auto-apply rules (5 skills mirrored; IDE added in v1.3.0)
 │   └── rules/
 │       ├── supreme-coding-guidelines.md
 │       ├── supreme-project-audit.md
 │       ├── supreme-problem-solving.md
-│       └── supreme-ai-engineering.md
+│       ├── supreme-ai-engineering.md
+│       └── supreme-npm-node.md
 └── examples/                               ← Before/after demonstrations
     ├── INFO.md
     ├── before-after.md
@@ -368,7 +389,7 @@ supreme-coding-guidelines-skill.ah/
 
 ## How to use / install `.claude-plugin`
 
-The repo's `.claude-plugin/plugin.json` is a single Claude Code plugin named `supreme-coding-guidelines` that auto-discovers all five skills (`ah-parser`, `supreme-coding-guidelines`, `supreme-project-audit`, `supreme-problem-solving`, `supreme-ai-engineering`) from the `skills/` directory. The `.claude-plugin/marketplace.json` advertises this plugin in the `ah-language` marketplace.
+The repo's `.claude-plugin/plugin.json` is a single Claude Code plugin named `supreme-coding-guidelines` that auto-discovers all six skills (`ah-parser`, `supreme-coding-guidelines`, `supreme-project-audit`, `supreme-problem-solving`, `supreme-ai-engineering`, `supreme-npm-node`) from the `skills/` directory. The `.claude-plugin/marketplace.json` advertises this plugin in the `ah-language` marketplace.
 
 ```bash
 # Claude Code native
@@ -393,7 +414,8 @@ Both manifests are validated against the canonical schemas at [schemastore.org](
 
 ## Roadmap
 
-- **v1.3.0 (current)** — adds `supreme-ai-engineering` skill: principal AI engineering discipline for Product/AI/ML/LLM engineers, LLM architects, AI researchers, QA engineers, and Software Quality engineers building production AI/ML/LLM/MLOps/LLMOps systems (eval-first design, pipeline contracts, governance, reliability, QA rigor, operational excellence); existing skills, parser protocol, and SPEC unchanged
+- **v1.4.0 (current)** — adds `supreme-npm-node` skill: principal NPM/NPX/NPMJS/Node engineering discipline for Tech Leads, DevOps, Backend, Frontend, Product/AI/ML/LLM engineers, LLM architects, AI researchers, QA engineers, and Software Quality engineers (latest-version-always via `ncu -u`, TypeScript strict mode, package publishing discipline, OIDC provenance, supply-chain audit gates, pnpm workspaces); existing skills, parser protocol, and SPEC unchanged
+- **v1.3.0** — added `supreme-ai-engineering` skill: principal AI engineering discipline for Product/AI/ML/LLM engineers, LLM architects, AI researchers, QA engineers, and Software Quality engineers building production AI/ML/LLM/MLOps/LLMOps systems
 - **v1.2.0** — added `supreme-problem-solving` skill for analyze-verify-diagnose-solve workflows with a structured tabular deliverable
 - **v1.1.0** — added `supreme-project-audit` skill for evidence-driven audits (Product, AI, ML, LLM engineers, LLM architects, AI researchers)
 - **v1.0.1** — canonical gematria table + three-mode output protocol + code-preservation guarantee + Claude Code native plugin manifest + formal [`SPEC.md`](SPEC.md) (EBNF grammar) + [`scripts/ah-lint`](scripts/ah-lint) validator + [`BENCHMARK.md`](BENCHMARK.md) methodology

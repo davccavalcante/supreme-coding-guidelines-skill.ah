@@ -19,8 +19,9 @@ Load the skill once and these examples work instantly.
 
 ## See also
 
-The same bundle ships three additional on-demand skills for Product / AI / ML / LLM engineers, LLM architects, AI researchers, QA engineers, and Software Quality engineers:
+The same bundle ships four additional on-demand skills for Tech Leads, DevOps, Backend, Frontend, Product / AI / ML / LLM engineers, LLM architects, AI researchers, QA engineers, and Software Quality engineers:
 
 - [`supreme-project-audit`](../skills/supreme-project-audit/SKILL.md) — invoke via `/supreme-project-audit` for evidence-driven audits. Eight dimensions: read-before-findings, evidence chain, severity discipline, coverage map, threat modeling, cost & reproducibility, compressed findings, plan-then-execute.
 - [`supreme-problem-solving`](../skills/supreme-problem-solving/SKILL.md) — invoke via `/supreme-problem-solving` to analyze, verify, diagnose, and solve specific problems (simple to complex) with a structured tabular deliverable. Eight sections: define-problem, reproduce, competing-hypotheses, instrument-evidence, minimum-invasive-fix, verify-and-validate, tabular-report, post-mortem.
 - [`supreme-ai-engineering`](../skills/supreme-ai-engineering/SKILL.md) — invoke via `/supreme-ai-engineering` for principal AI engineering discipline on production AI/ML/LLM/MLOps/LLMOps systems. Eight sections: understand-before-building, measurable-success, feedback-loops-first, pipeline-contracts-and-gates, governance-architecture-and-registry, production-reliability-safety-and-chaos, quality-engineering-and-research-rigor, operational-excellence-and-refinement.
+- [`supreme-npm-node`](../skills/supreme-npm-node/SKILL.md) — invoke via `/supreme-npm-node` for NPM/NPX/NPMJS/Node engineering with a latest-version-always policy via `ncu -u`. Eight sections: understand-ecosystem, always-latest-ncu-upgrade, typescript-strict-mode-maximum, development-workflow-scripts, package-publishing-discipline-architecture, production-reliability-supply-chain-security, quality-gates-before-publish, maintenance-continuous-upgrade-cycle.

@@ -2,7 +2,7 @@
 name: supreme-ai-engineering
 description: Principal AI engineering discipline for Product/AI/ML/LLM engineers, LLM architects, AI researchers, QA engineers, and Software Quality engineers building production AI/ML/LLM/MLOps/LLMOps systems. Eval-first design, pipeline contracts, governance, reliability, QA rigor, operational excellence. On-demand in Claude Code.
 author: David C. Cavalcante
-version: 1.3.0
+version: 1.4.0
 alwaysApply: false
 ---
 
