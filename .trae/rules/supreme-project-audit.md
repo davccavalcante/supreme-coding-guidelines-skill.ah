@@ -2,7 +2,7 @@
 name: supreme-project-audit
 description: Evidence-driven full-project audit for Product/AI/ML/LLM engineers, LLM architects, and AI researchers. Severity discipline (P0/P1/P2/P3), coverage maps, STRIDE + OWASP LLM Top 10 threat modeling, reproducibility checks, terse tabular report. On-demand in Trae.
 author: David C. Cavalcante
-version: 1.4.0
+version: 1.5.0
 alwaysApply: false
 ---
 

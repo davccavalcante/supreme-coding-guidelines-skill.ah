@@ -2,7 +2,7 @@
 name: supreme-npm-node
 description: Principal NPM/NPX/NPMJS/Node engineering discipline for Tech Leads, DevOps, Backend, Frontend, Product/AI/ML/LLM engineers, LLM architects, AI researchers, QA engineers, and Software Quality engineers. Latest-version-always policy (ncu -u before install), TypeScript strict mode (all checks), package.json discipline (files allowlist, exports map, engines), OIDC provenance, supply-chain audit gates, pnpm workspaces, continuous upgrade cadence. On-demand in Claude Code.
 author: David C. Cavalcante
-version: 1.4.0
+version: 1.5.0
 alwaysApply: false
 ---
 

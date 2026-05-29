@@ -1,8 +1,8 @@
 # Supreme Coding Guidelines Skill .ah
 
-![.AH](https://img.shields.io/badge/AH_Language-1.4.0-black.svg)
-![SKILL](https://img.shields.io/badge/SKILL-1.4.0-black.svg)
-![Version](https://img.shields.io/badge/version-1.4.0-black.svg)
+![.AH](https://img.shields.io/badge/AH_Language-1.5.0-black.svg)
+![SKILL](https://img.shields.io/badge/SKILL-1.5.0-black.svg)
+![Version](https://img.shields.io/badge/version-1.5.0-black.svg)
 ![License](https://img.shields.io/badge/license-MIT-black.svg)
 
 [![Star History Chart](https://api.star-history.com/svg?repos=davccavalcante/supreme-coding-guidelines-skill.ah&type=timeline&legend=top-left)](https://www.star-history.com/#davccavalcante/supreme-coding-guidelines-skill.ah&type=timeline&legend=top-left)
@@ -165,7 +165,7 @@ graph TD
 # 1. Add this repo as a Claude Code marketplace
 /plugin marketplace add davccavalcante/supreme-coding-guidelines-skill.ah
 
-# 2. Install the bundled plugin (auto-discovers ah-parser + supreme-coding-guidelines + supreme-project-audit + supreme-problem-solving + supreme-ai-engineering + supreme-npm-node)
+# 2. Install the bundled plugin (auto-discovers ah-parser + supreme-coding-guidelines + supreme-project-audit + supreme-problem-solving + supreme-ai-engineering + supreme-npm-node + supreme-content-craft)
 /plugin install supreme-coding-guidelines@ah-language
 ```
 
@@ -186,10 +186,11 @@ npx skills add https://github.com/davccavalcante/supreme-coding-guidelines-skill
 6. The `supreme-problem-solving` skill becomes **available on demand** — invoke `/supreme-problem-solving` to analyze, verify, diagnose, and solve specific problems (simple to complex) with a structured tabular deliverable.
 7. The `supreme-ai-engineering` skill becomes **available on demand** — invoke `/supreme-ai-engineering` when building, operating, or governing production AI/ML/LLM/MLOps/LLMOps systems (eval-first design, pipeline contracts, registry governance, production reliability, QA rigor, operational excellence).
 8. The `supreme-npm-node` skill becomes **available on demand** — invoke `/supreme-npm-node` for NPM/NPX/Node/TypeScript work with a latest-version-always policy (`ncu -u` before every install), strict-mode TypeScript, package publishing discipline, OIDC provenance, and continuous upgrade cadence.
+9. The `supreme-content-craft` skill becomes **available on demand** — invoke `/supreme-content-craft` for SEO, SEM, Header Binding (HTML/HTTP/AdTech), Copywriting, Marketing, Branding, Growth, Content Strategy, Technical/UX/Ghostwriting, and Research work with six integrated persuasion frameworks (AIDA, Cialdini's six principles, StoryBrand/PAS/FAB/Schwartz/Made-to-Stick/Ogilvy/Hopkins, Schopenhauer's ethical eristic, Joe Girard's Law of 250, Cialdini Pre-Suasion), Features→Project→How→Benefits→Sales→Purchase content structure, and 15 quality tool gates.
 
 ## What this bundle does
 
-The `supreme-coding-guidelines@ah-language` plugin bundles six skills with distinct activation models:
+The `supreme-coding-guidelines@ah-language` plugin bundles seven skills with distinct activation models:
 
 | Skill | Activation | Purpose |
 |-------|------------|---------|
@@ -199,6 +200,7 @@ The `supreme-coding-guidelines@ah-language` plugin bundles six skills with disti
 | `supreme-problem-solving` | On demand via `/supreme-problem-solving` | Analyze, verify, diagnose, and solve specific problems (simple to complex) with a structured tabular deliverable |
 | `supreme-ai-engineering` | On demand via `/supreme-ai-engineering` | Principal AI engineering discipline for production AI/ML/LLM/MLOps/LLMOps systems (eval-first design, pipeline contracts, governance, reliability, QA rigor, operational excellence) — serves Product, AI, ML, LLM engineers, LLM architects, AI researchers, QA engineers, and Software Quality engineers |
 | `supreme-npm-node` | On demand via `/supreme-npm-node` | Principal NPM/NPX/NPMJS/Node engineering discipline (latest-version-always via `ncu -u`, TypeScript strict mode with all checks, package publishing with OIDC provenance, supply-chain audit gates, pnpm workspaces, continuous upgrade cadence) — serves Tech Leads, DevOps, Backend, Frontend, Product/AI/ML/LLM engineers, LLM architects, AI researchers, QA engineers, and Software Quality engineers |
+| `supreme-content-craft` | On demand via `/supreme-content-craft` | Principal content craft discipline (SEO, SEM, Header Binding HTML/HTTP/AdTech, Copywriting, Marketing, Branding, Growth, Content Strategy, Technical/UX/Ghostwriting) with six integrated persuasion frameworks (AIDA + Cialdini 6 principles + StoryBrand/PAS/FAB/Schwartz/SUCCESs/Ogilvy/Hopkins + Schopenhauer ethical eristic + Joe Girard Law of 250 + Cialdini Pre-Suasion), Features→Project→How→Benefits→Sales→Purchase content pattern, and 15 quality tool gates (Grammar, Paraphraser, Plagiarism, AI Detector, Humanizer, Translator, Summarizer, Citation, Readability Scorer, Tone Analyzer, Headline Analyzer, Schema Validator, Meta Generator, SERP-Backlink-Gap Analyzer, Image-Alt-OCR). Ethical persuasion only |
 
 ### Behavioral rules of `supreme-coding-guidelines` (eight integrated sections)
 
@@ -232,6 +234,22 @@ The `supreme-coding-guidelines@ah-language` plugin bundles six skills with disti
 - **Verify and validate** — Regression test at correct seam + eval suite rerun for AI/ML/LLM + dark launch shadow compare for production
 - **Structured tabular report** — Deliverable is a markdown table: problem / repro / hypothesis / evidence / fix / verification / owner / ETA
 - **Post-mortem and prevention** — Identify the architectural or process gap that allowed the bug; recommend systemic prevention
+
+### Content craft discipline of `supreme-content-craft` (thirteen integrated sections)
+
+- **Understand audience + search intent + brand voice** — classify intent (informational/navigational/commercial/transactional), read brand guidelines, analyze top-10 SERP, map audience pain/desire/objection BEFORE first draft
+- **Keyword + entity + GEO SEO strategy** — primary keyword → semantic cluster; brand → schema.org entity for Knowledge Graph (~3.2× AI search visibility); programmatic templates never thin; classical SEO → GEO citation-worthy passages for AI search
+- **Content structure** — every commercial piece includes Features → Project → How It Works → Benefits → Sales Justification (ROI numbers) → Purchase Decision (objection handling, guarantee, social proof)
+- **AIDA framework** — Attention (hook/headline/contrarian/pattern interrupt) → Interest (relevance/curiosity gap/specificity) → Desire (transformation/social proof/identity shift) → Action (specific CTA, honest urgency, risk reversal); AIDA audit on every piece
+- **Cialdini's six principles of Influence** — Reciprocity (lead magnet first), Commitment/Consistency (micro-yes → macro-yes), Social Proof (testimonials never fabricated), Authority (real credentials never borrowed), Liking (warmth never sycophantic), Scarcity (real never fake)
+- **Additional frameworks** — StoryBrand SB7 (Donald Miller), PAS (Problem-Agitate-Solution, never fear-mongering), FAB (Features→Advantages→Benefits in order), Schwartz's 5 levels of awareness (match copy intensity to stage), Made to Stick SUCCESs (Simple/Unexpected/Concrete/Credible/Emotional/Stories), Ogilvy + Hopkins (facts tell, benefits sell, always test)
+- **Schopenhauer ethical Eristic Dialectic** — only ethical subset: stratagem 7 (generalize honestly), 13 (present stronger contrary), 14 (triumph on facts), 17 (subtle distinction), 26 (ethical judo); explicitly EXCLUDES ad hominem, straw man, equivocation, appeal to authority, diversion, insult, bewilder-with-meaningless-words, shifting goalposts, fake incompetence, anger provocation, false consequences
+- **Joe Girard Law of 250 + relationship selling** — every reader knows 250 others (one satisfied reader → 250 referrals); Mt. Everest (never stop prospecting); Girard Chair (sit beside the reader in copy, never opposite); after-sale service = first day of relationship; honesty compounds reputation; warmth/empathy before pitch
+- **Production discipline** — outline-first → draft → edit (cut 20% of first draft) → optimize; hook in first 100 words; one idea per paragraph; readability target grade 6-8 (general) or 10-12 (technical)
+- **On-page SEO architecture** — title < 60 chars, meta < 155 chars, H1 matches intent, JSON-LD schema (Article/Author/Organization/FAQ/HowTo/Product/Review/Breadcrumb), internal linking hub-spoke, Lighthouse 90+, LCP < 2.5s, CLS < 0.1
+- **Header Binding (HTML + HTTP + AdTech)** — HTML semantic H1-H6 hierarchy, HTTP cache (Cache-Control/ETag/HSTS/CSP/canonical/hreflang), AdTech header bidding via Prebid.js/GAM/server-side with viewable CPM optimization and ads.txt/sellers.json transparency
+- **15 quality tool gates** — Grammar (LanguageTool/Grammarly/Hemingway), Paraphraser (QuillBot/Wordtune), Plagiarism (Copyscape/Turnitin, < 5% match), AI Detector (GPTZero/Originality), AI Humanizer (with disclosure), Translator (DeepL > Google with human review), Summarizer, Citation Generator (APA/MLA/Chicago/Harvard/IEEE), Readability Scorer (Flesch-Kincaid/Gunning Fog/SMOG), Tone Analyzer, Headline Analyzer (CoSchedule/Sharethrough), Schema Validator, Meta Generator, SERP+Backlink+Gap Analyzer (Ahrefs/Semrush/Moz), Image Alt-Text + OCR + Audio Transcriber (Whisper/Tesseract)
+- **Measurement + refresh + repurpose** — pre-launch hypothesis (target keyword/rank/CTR/conversion); weekly Search Console + Analytics; A/B with statistical power; quarterly content audit; repurpose long-form into social/video/podcast/email/newsletter/webinar
 
 ### NPM/Node discipline of `supreme-npm-node` (eight integrated sections)
 
@@ -292,6 +310,7 @@ The full table, EBNF grammar, and computation rules live in [`SPEC.md`](SPEC.md)
 - `skills/supreme-problem-solving/SKILL.md` → `#> 1187`
 - `skills/supreme-ai-engineering/SKILL.md` → `#> 1227`
 - `skills/supreme-npm-node/SKILL.md` → `#> 1269`
+- `skills/supreme-content-craft/SKILL.md` → `#> 2602`
 
 Validate any `.ah` file with the bundled linter:
 
@@ -337,48 +356,55 @@ supreme-coding-guidelines-skill.ah/
 │   │   └── SKILL.md
 │   ├── supreme-ai-engineering/             ← Principal AI/ML/LLM engineering discipline (on demand)
 │   │   └── SKILL.md
-│   └── supreme-npm-node/                   ← NPM/NPX/Node/TypeScript discipline with latest-always policy (on demand)
+│   ├── supreme-npm-node/                   ← NPM/NPX/Node/TypeScript discipline with latest-always policy (on demand)
+│   │   └── SKILL.md
+│   └── supreme-content-craft/              ← SEO/SEM/Copywriting/Marketing/Writing with 6 persuasion frameworks + 15 quality tools (on demand)
 │       └── SKILL.md
 ├── scripts/
 │   └── ah-lint                             ← Canonical .ah validator (Python CLI)
 ├── .claude-plugin/                         ← Claude Code plugin config
 │   ├── marketplace.json                    ← Marketplace listing (schemastore-validated)
 │   └── plugin.json                         ← Plugin manifest (schemastore-validated)
-├── .claude/                                ← Claude Code auto-apply rules (5 skills mirrored)
+├── .claude/                                ← Claude Code auto-apply rules (6 skills mirrored)
 │   └── rules/
 │       ├── supreme-coding-guidelines.md
 │       ├── supreme-project-audit.md
 │       ├── supreme-problem-solving.md
 │       ├── supreme-ai-engineering.md
-│       └── supreme-npm-node.md
-├── .cursor/                                ← Cursor auto-apply rules (5 skills mirrored)
+│       ├── supreme-npm-node.md
+│       └── supreme-content-craft.md
+├── .cursor/                                ← Cursor auto-apply rules (6 skills mirrored)
 │   └── rules/
 │       ├── supreme-coding-guidelines.mdc
 │       ├── supreme-project-audit.mdc
 │       ├── supreme-problem-solving.mdc
 │       ├── supreme-ai-engineering.mdc
-│       └── supreme-npm-node.mdc
-├── .trae/                                  ← Trae auto-apply rules (5 skills mirrored)
+│       ├── supreme-npm-node.mdc
+│       └── supreme-content-craft.mdc
+├── .trae/                                  ← Trae auto-apply rules (6 skills mirrored)
 │   └── rules/
 │       ├── supreme-coding-guidelines.md
 │       ├── supreme-project-audit.md
 │       ├── supreme-problem-solving.md
 │       ├── supreme-ai-engineering.md
-│       └── supreme-npm-node.md
-├── .zed/                                   ← Zed auto-apply rules (5 skills mirrored)
+│       ├── supreme-npm-node.md
+│       └── supreme-content-craft.md
+├── .zed/                                   ← Zed auto-apply rules (6 skills mirrored)
 │   └── rules/
 │       ├── supreme-coding-guidelines.md
 │       ├── supreme-project-audit.md
 │       ├── supreme-problem-solving.md
 │       ├── supreme-ai-engineering.md
-│       └── supreme-npm-node.md
-├── .kiro/                                  ← Kiro auto-apply rules (5 skills mirrored; IDE added in v1.3.0)
+│       ├── supreme-npm-node.md
+│       └── supreme-content-craft.md
+├── .kiro/                                  ← Kiro auto-apply rules (6 skills mirrored; IDE added in v1.3.0)
 │   └── rules/
 │       ├── supreme-coding-guidelines.md
 │       ├── supreme-project-audit.md
 │       ├── supreme-problem-solving.md
 │       ├── supreme-ai-engineering.md
-│       └── supreme-npm-node.md
+│       ├── supreme-npm-node.md
+│       └── supreme-content-craft.md
 └── examples/                               ← Before/after demonstrations
     ├── INFO.md
     ├── before-after.md
@@ -389,7 +415,7 @@ supreme-coding-guidelines-skill.ah/
 
 ## How to use / install `.claude-plugin`
 
-The repo's `.claude-plugin/plugin.json` is a single Claude Code plugin named `supreme-coding-guidelines` that auto-discovers all six skills (`ah-parser`, `supreme-coding-guidelines`, `supreme-project-audit`, `supreme-problem-solving`, `supreme-ai-engineering`, `supreme-npm-node`) from the `skills/` directory. The `.claude-plugin/marketplace.json` advertises this plugin in the `ah-language` marketplace.
+The repo's `.claude-plugin/plugin.json` is a single Claude Code plugin named `supreme-coding-guidelines` that auto-discovers all seven skills (`ah-parser`, `supreme-coding-guidelines`, `supreme-project-audit`, `supreme-problem-solving`, `supreme-ai-engineering`, `supreme-npm-node`, `supreme-content-craft`) from the `skills/` directory. The `.claude-plugin/marketplace.json` advertises this plugin in the `ah-language` marketplace.
 
 ```bash
 # Claude Code native
@@ -414,7 +440,8 @@ Both manifests are validated against the canonical schemas at [schemastore.org](
 
 ## Roadmap
 
-- **v1.4.0 (current)** — adds `supreme-npm-node` skill: principal NPM/NPX/NPMJS/Node engineering discipline for Tech Leads, DevOps, Backend, Frontend, Product/AI/ML/LLM engineers, LLM architects, AI researchers, QA engineers, and Software Quality engineers (latest-version-always via `ncu -u`, TypeScript strict mode, package publishing discipline, OIDC provenance, supply-chain audit gates, pnpm workspaces); existing skills, parser protocol, and SPEC unchanged
+- **v1.5.0 (current)** — adds `supreme-content-craft` skill: principal content craft discipline for SEO, SEM, Header Binding (HTML/HTTP/AdTech), Copywriting, Marketing, Branding, Growth, Content Strategy, Technical/UX/Ghostwriting, Writers, Authors, Researchers, Editors; integrates six persuasion frameworks (AIDA, Cialdini, StoryBrand/PAS/FAB/Schwartz/SUCCESs/Ogilvy/Hopkins, Schopenhauer ethical eristic, Joe Girard Law of 250, Cialdini Pre-Suasion); Features→Project→How→Benefits→Sales→Purchase content structure; 15 quality tool gates; ethical persuasion only
+- **v1.4.0** — added `supreme-npm-node` skill: principal NPM/NPX/NPMJS/Node engineering discipline for Tech Leads, DevOps, Backend, Frontend, Product/AI/ML/LLM engineers, LLM architects, AI researchers, QA engineers, and Software Quality engineers (latest-version-always via `ncu -u`, TypeScript strict mode, package publishing discipline, OIDC provenance, supply-chain audit gates, pnpm workspaces)
 - **v1.3.0** — added `supreme-ai-engineering` skill: principal AI engineering discipline for Product/AI/ML/LLM engineers, LLM architects, AI researchers, QA engineers, and Software Quality engineers building production AI/ML/LLM/MLOps/LLMOps systems
 - **v1.2.0** — added `supreme-problem-solving` skill for analyze-verify-diagnose-solve workflows with a structured tabular deliverable
 - **v1.1.0** — added `supreme-project-audit` skill for evidence-driven audits (Product, AI, ML, LLM engineers, LLM architects, AI researchers)

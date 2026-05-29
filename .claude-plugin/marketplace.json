@@ -1,8 +1,8 @@
 {
   "$schema": "https://www.schemastore.org/claude-code-marketplace.json",
   "name": "ah-language",
-  "version": "1.4.0",
-  "description": "Marketplace for the .ah Teleological Semantic Format ecosystem by David C. Cavalcante. Hosts the supreme-coding-guidelines plugin (bundles the ah-parser bootstrap, the always-on coding-guidelines behavior, the on-demand supreme-project-audit skill, the on-demand supreme-problem-solving skill, the on-demand supreme-ai-engineering skill, and the on-demand supreme-npm-node skill).",
+  "version": "1.5.0",
+  "description": "Marketplace for the .ah Teleological Semantic Format ecosystem by David C. Cavalcante. Hosts the supreme-coding-guidelines plugin (bundles the ah-parser bootstrap, the always-on coding-guidelines behavior, the on-demand supreme-project-audit skill, the on-demand supreme-problem-solving skill, the on-demand supreme-ai-engineering skill, the on-demand supreme-npm-node skill, and the on-demand supreme-content-craft skill).",
   "owner": {
     "name": "David C. Cavalcante",
     "url": "https://github.com/davccavalcante"
@@ -14,8 +14,8 @@
         "source": "github",
         "repo": "davccavalcante/supreme-coding-guidelines-skill.ah"
       },
-      "version": "1.4.0",
-      "description": ".ah skill bundle for Claude Code. Token compression + surgical behavior + disciplined diagnosis + TDD + architectural control + evidence-driven audit + genuine problem-solving with tabular reports + principal AI engineering discipline for production AI/ML/LLM systems + latest-always NPM/NPX/Node discipline with ncu -u and OIDC provenance. Bundles six skills: ah-parser (one-time grammar bootstrap with three-mode output protocol), supreme-coding-guidelines (always-on behavioral rules), supreme-project-audit (on-demand audit for Product/AI/ML/LLM roles), supreme-problem-solving (on-demand analyze-verify-diagnose-solve workflow with tabular deliverable), supreme-ai-engineering (on-demand eval-first AI/ML/LLM/MLOps/LLMOps engineering discipline), and supreme-npm-node (on-demand NPM/Node/TypeScript discipline with latest-version-always policy and strict-mode TypeScript). User code is always preserved verbatim.",
+      "version": "1.5.0",
+      "description": ".ah skill bundle for Claude Code. Token compression + surgical behavior + disciplined diagnosis + TDD + architectural control + evidence-driven audit + genuine problem-solving + principal AI engineering for production AI/ML/LLM + latest-always NPM/Node + principal content craft (SEO/SEM/Copy/Marketing/Writing with AIDA + Cialdini + StoryBrand + Schopenhauer ethical eristic + Joe Girard Law of 250 + 15 quality tools). Bundles seven skills: ah-parser, supreme-coding-guidelines (always-on), supreme-project-audit, supreme-problem-solving, supreme-ai-engineering, supreme-npm-node, supreme-content-craft (all on-demand). User code is always preserved verbatim.",
       "category": "productivity",
       "license": "MIT",
       "keywords": [
