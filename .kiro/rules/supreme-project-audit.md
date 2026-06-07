@@ -1,8 +1,8 @@
 ---
 name: supreme-project-audit
-description: Evidence-driven full-project audit for Product/AI/ML/LLM engineers, LLM architects, and AI researchers. Severity discipline (P0/P1/P2/P3), coverage maps, STRIDE + OWASP LLM Top 10 threat modeling, reproducibility checks, terse tabular report. On-demand in Kiro.
+description: Evidence-driven full-project audit (P0-P3 severity, coverage maps, STRIDE + OWASP LLM Top 10 threat modeling, reproducibility, tabular report). On-demand in Kiro.
 author: David C. Cavalcante
-version: 1.5.0
+version: 1.6.0
 alwaysApply: false
 ---
 

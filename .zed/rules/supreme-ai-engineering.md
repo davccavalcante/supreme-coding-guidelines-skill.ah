@@ -1,8 +1,8 @@
 ---
 name: supreme-ai-engineering
-description: Principal AI engineering discipline for Product/AI/ML/LLM engineers, LLM architects, AI researchers, QA engineers, and Software Quality engineers building production AI/ML/LLM/MLOps/LLMOps systems. Eval-first design, pipeline contracts, governance, reliability, QA rigor, operational excellence. On-demand in Zed.
+description: Principal AI engineering discipline for production AI/ML/LLM/MLOps/LLMOps systems with eval-first design, pipeline contracts, governance, reliability, QA rigor, operational excellence. On-demand in Zed.
 author: David C. Cavalcante
-version: 1.5.0
+version: 1.6.0
 alwaysApply: false
 ---
 

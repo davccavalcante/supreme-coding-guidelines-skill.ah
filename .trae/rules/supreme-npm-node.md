@@ -1,8 +1,8 @@
 ---
 name: supreme-npm-node
-description: Principal NPM/NPX/NPMJS/Node engineering discipline for Tech Leads, DevOps, Backend, Frontend, Product/AI/ML/LLM engineers, LLM architects, AI researchers, QA engineers, and Software Quality engineers. Latest-version-always policy (ncu -u before install), TypeScript strict mode (all checks), package.json discipline (files allowlist, exports map, engines), OIDC provenance, supply-chain audit gates, pnpm workspaces, continuous upgrade cadence. On-demand in Trae.
+description: Principal NPM/NPX/NPMJS/Node engineering with latest-version-always policy via ncu -u, TypeScript strict mode, package.json discipline, OIDC provenance, supply-chain audit, pnpm workspaces. On-demand in Trae.
 author: David C. Cavalcante
-version: 1.5.0
+version: 1.6.0
 alwaysApply: false
 ---
 

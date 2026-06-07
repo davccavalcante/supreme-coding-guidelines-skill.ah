@@ -1,8 +1,8 @@
 ---
 name: supreme-problem-solving
-description: Genuine problem-solving discipline for Product/AI/ML/LLM engineers, LLM architects, AI researchers. Precise problem statements, reliable reproduction, 3-5 ranked falsifiable hypotheses, instrumented evidence, minimum-invasive reversible fixes, structured tabular deliverable. On-demand in Claude Code.
+description: Genuine problem-solving with precise statements, deterministic reproduction, 3-5 ranked falsifiable hypotheses, instrumented evidence, minimum-invasive fixes, structured tabular deliverable. On-demand in Claude Code.
 author: David C. Cavalcante
-version: 1.5.0
+version: 1.6.0
 alwaysApply: false
 ---
 

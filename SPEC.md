@@ -1,7 +1,7 @@
 # `.ah` Language Specification
 
 ```
-Version       : 1.5.0
+Version       : 1.6.0
 Status        : Draft (canonical)
 Spec date     : 2026-05-03
 Author        : David C. Cavalcante (Takk8IS)
@@ -297,6 +297,10 @@ See `skills/supreme-npm-node/SKILL.md` (`#> 1269`).
 
 See `skills/supreme-content-craft/SKILL.md` (`#> 2602`).
 
+### 9.10 Reference — supreme-council
+
+See `skills/supreme-council/SKILL.md` (`#> 1773`).
+
 ## 10. Conformance
 
 A conformant `.ah` parser MUST:
@@ -323,13 +327,14 @@ A conformant `.ah` host (LLM agent) SHOULD additionally:
 
 ## 12. References
 
-- Reference implementation skills: [`skills/ah-parser/SKILL.md`](skills/ah-parser/SKILL.md), [`skills/supreme-coding-guidelines/SKILL.md`](skills/supreme-coding-guidelines/SKILL.md), [`skills/supreme-project-audit/SKILL.md`](skills/supreme-project-audit/SKILL.md), [`skills/supreme-problem-solving/SKILL.md`](skills/supreme-problem-solving/SKILL.md), [`skills/supreme-ai-engineering/SKILL.md`](skills/supreme-ai-engineering/SKILL.md), [`skills/supreme-npm-node/SKILL.md`](skills/supreme-npm-node/SKILL.md), [`skills/supreme-content-craft/SKILL.md`](skills/supreme-content-craft/SKILL.md)
+- Reference implementation skills: [`skills/ah-parser/SKILL.md`](skills/ah-parser/SKILL.md), [`skills/supreme-coding-guidelines/SKILL.md`](skills/supreme-coding-guidelines/SKILL.md), [`skills/supreme-project-audit/SKILL.md`](skills/supreme-project-audit/SKILL.md), [`skills/supreme-problem-solving/SKILL.md`](skills/supreme-problem-solving/SKILL.md), [`skills/supreme-ai-engineering/SKILL.md`](skills/supreme-ai-engineering/SKILL.md), [`skills/supreme-npm-node/SKILL.md`](skills/supreme-npm-node/SKILL.md), [`skills/supreme-content-craft/SKILL.md`](skills/supreme-content-craft/SKILL.md), [`skills/supreme-council/SKILL.md`](skills/supreme-council/SKILL.md)
 - Reference linter: [`scripts/ah-lint`](scripts/ah-lint)
 - Benchmark methodology: [`BENCHMARK.md`](BENCHMARK.md)
 - TOON format (heritage): https://github.com/toon-format/toon
 
 ## 13. Changelog
 
+- **1.6.0** (2026-05-20) — Bundle expansion: added `supreme-council` skill (principal multi-perspective deliberation council for ambiguous high-stakes decisions across Product, Engineering, AI/ML/LLM Architecture, Research, Operations, Strategy; convenes four distinct cognitive personas — First-Principle Thinker, Expansionist, Outsider, Executor — and runs a three-round protocol inspired by Karpathy's LLM Council methodology: individual independent outputs → anonymous peer review → synthesis that preserves dissent. Integrates Spec-Kit-style phasing — Constitution/Specify/Clarify/Plan/Tasks/Analyze — plus Klein premortem with minimum five failure scenarios, early-warning signals, and reversibility paths, plus Cynefin-style uncertainty handling with kill criteria and adaptation checkpoints. Includes post-decision audit and calibration loop. Cláusula non-negotiable: never tries to please the user — honest assessment over comfortable answer, minority position always preserved). The skill uses only the canonical keyword set from §4; no language or grammar changes. Reference checksum: `skills/supreme-council/SKILL.md` → `#> 1773`. All five IDE rule directories received the new mirror — 35 mirror files total across the bundle (7 behavioral skills × 5 IDEs).
 - **1.5.0** (2026-05-20) — Bundle expansion: added `supreme-content-craft` skill (principal content craft discipline for SEO, SEM, Header Binding (HTML semantic + HTTP + AdTech), Copywriting, Marketing, Branding, Growth, Content Strategy, Technical/UX/Ghostwriting, Writers, Authors, Researchers, professional Editors; integrates six persuasion frameworks — AIDA, Cialdini's six principles of Influence, StoryBrand SB7 + PAS + FAB + Schwartz five awareness levels + Made to Stick SUCCESs + Ogilvy + Hopkins, Schopenhauer's ethical Eristic Dialectic subset (stratagems 7/13/14/17/26 plus explicit exclusion of manipulative stratagems), Joe Girard's "How to Sell Anything to Anybody" (Law of 250, Mt. Everest, Girard Chair, after-sale service), and Cialdini Pre-Suasion; enforces content-structure pattern Features→Project→How→Benefits→Sales→Purchase; provides 15 quality tool gates covering Grammar/Paraphraser/Plagiarism/AI Detector/Humanizer/Translator/Summarizer/Citation/Readability/Tone/Headline/Schema Validator/Meta Generator/SERP-Backlink-Gap/Image-Alt-OCR; ethical-persuasion-only constraint at the same trust tier as instruction hierarchy). The skill uses only the canonical keyword set from §4; no language or grammar changes. Reference checksum: `skills/supreme-content-craft/SKILL.md` → `#> 2602`. All five IDE rule directories received the new mirror — 30 mirror files total across the bundle (6 behavioral skills × 5 IDEs).
 - **1.4.0** (2026-05-20) — Bundle expansion: added `supreme-npm-node` skill (principal NPM/NPX/NPMJS/Node engineering discipline for Tech Leads, DevOps, Backend, Frontend, Product/AI/ML/LLM engineers, LLM architects, AI researchers, QA engineers, and Software Quality engineers; enforces a latest-version-always policy via `ncu -u` before any install, TypeScript strict mode with every check enabled, `satisfies` over `as`, `unknown` over `any`, discriminated unions over optional flags, branded types for opaque identifiers, `files` allowlist over `.npmignore`, OIDC provenance attestation, supply-chain audit gates, pnpm workspaces, and continuous upgrade cadence). The skill uses only the canonical keyword set from §4; no language or grammar changes. Reference checksum: `skills/supreme-npm-node/SKILL.md` → `#> 1269`. All five IDE rule directories (Claude Code, Cursor, Trae, Zed, Kiro) received the new mirror — 25 mirror files total across the bundle.
 - **1.3.0** (2026-05-20) — Bundle expansion: added `supreme-ai-engineering` skill (principal AI engineering discipline for Product/AI/ML/LLM engineers, LLM architects, AI researchers, QA engineers, and Software Quality engineers building production AI/ML/LLM/MLOps/LLMOps systems; enforces eval-first design, deterministic feedback loops, pipeline contracts, governance, reliability, QA rigor, and operational excellence). The skill uses only the canonical keyword set from §4; no language or grammar changes. Reference checksum: `skills/supreme-ai-engineering/SKILL.md` → `#> 1227`. Also added Kiro IDE support (`.kiro/rules/`) and mirrored all four behavioral skills (`supreme-coding-guidelines`, `supreme-project-audit`, `supreme-problem-solving`, `supreme-ai-engineering`) into all five IDE rule directories (Claude Code, Cursor, Trae, Zed, Kiro) — 20 mirror files total, each preserving the canonical gematria checksum of its source skill.

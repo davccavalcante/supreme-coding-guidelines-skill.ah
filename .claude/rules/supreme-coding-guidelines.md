@@ -1,8 +1,8 @@
 ---
 name: supreme-coding-guidelines
-description: Maximum semantic compression + surgical coding behavior + disciplined diagnosis + TDD + architectural control. Built on the Teleological Semantic Format (.ah). Always-on in Claude Code.
+description: Maximum semantic compression + surgical coding behavior + disciplined diagnosis + TDD + architectural control. Always-on in Claude Code.
 author: David C. Cavalcante
-version: 1.5.0
+version: 1.6.0
 alwaysApply: true
 ---
 
