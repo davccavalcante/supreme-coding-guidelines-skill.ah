@@ -1,8 +1,8 @@
 ---
 name: supreme-content-craft
-description: Principal content craft for SEO/SEM/Header Binding/Copywriting/Marketing/Writing with six persuasion frameworks (AIDA, Cialdini, StoryBrand/PAS/FAB/Schwartz/SUCCESs/Ogilvy/Hopkins, Schopenhauer ethical eristic, Joe Girard Law of 250, Cialdini Pre-Suasion), Features→Project→How→Benefits→Sales→Purchase structure, 15 quality tool gates. Ethical persuasion only. On-demand in Claude Code.
+description: Principal content craft for SEO/SEM/Header Binding/Copywriting/Marketing/Writing with six persuasion frameworks (AIDA, Cialdini, StoryBrand/PAS/FAB/Schwartz/SUCCESs/Ogilvy/Hopkins, Schopenhauer ethical eristic, Joe Girard Law of 250, Cialdini Pre-Suasion), Features to Project to How to Benefits to Sales to Purchase structure, 15 quality tool gates. Ethical persuasion only. On-demand in Claude Code.
 author: David C. Cavalcante
-version: 1.6.0
+version: 1.7.0
 alwaysApply: false
 ---
 

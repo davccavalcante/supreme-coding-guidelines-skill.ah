@@ -2,7 +2,7 @@
 name: supreme-coding-guidelines
 description: Maximum semantic compression + surgical coding behavior + disciplined diagnosis + TDD + architectural control. Always-on in Zed.
 author: David C. Cavalcante
-version: 1.6.0
+version: 1.7.0
 alwaysApply: true
 ---
 

@@ -1,8 +1,8 @@
 # Supreme Coding Guidelines Skill .ah
 
-![.AH](https://img.shields.io/badge/AH_Language-1.6.0-black.svg)
-![SKILL](https://img.shields.io/badge/SKILL-1.6.0-black.svg)
-![Version](https://img.shields.io/badge/version-1.6.0-black.svg)
+![.AH](https://img.shields.io/badge/AH_Language-1.7.0-black.svg)
+![SKILL](https://img.shields.io/badge/SKILL-1.7.0-black.svg)
+![Version](https://img.shields.io/badge/version-1.7.0-black.svg)
 ![License](https://img.shields.io/badge/license-MIT-black.svg)
 
 [![Star History Chart](https://api.star-history.com/svg?repos=davccavalcante/supreme-coding-guidelines-skill.ah&type=timeline&legend=top-left)](https://www.star-history.com/#davccavalcante/supreme-coding-guidelines-skill.ah&type=timeline&legend=top-left)
@@ -165,7 +165,7 @@ graph TD
 # 1. Add this repo as a Claude Code marketplace
 /plugin marketplace add davccavalcante/supreme-coding-guidelines-skill.ah
 
-# 2. Install the bundled plugin (auto-discovers ah-parser + supreme-coding-guidelines + supreme-project-audit + supreme-problem-solving + supreme-ai-engineering + supreme-npm-node + supreme-content-craft + supreme-council)
+# 2. Install the bundled plugin (auto-discovers ah-parser + supreme-coding-guidelines + supreme-project-audit + supreme-problem-solving + supreme-ai-engineering + supreme-npm-node + supreme-content-craft + supreme-council + supreme-benchmarking)
 /plugin install supreme-coding-guidelines@ah-language
 ```
 
@@ -188,10 +188,11 @@ npx skills add https://github.com/davccavalcante/supreme-coding-guidelines-skill
 8. The `supreme-npm-node` skill becomes **available on demand** — invoke `/supreme-npm-node` for NPM/NPX/Node/TypeScript work with a latest-version-always policy (`ncu -u` before every install), strict-mode TypeScript, package publishing discipline, OIDC provenance, and continuous upgrade cadence.
 9. The `supreme-content-craft` skill becomes **available on demand** — invoke `/supreme-content-craft` for SEO, SEM, Header Binding (HTML/HTTP/AdTech), Copywriting, Marketing, Branding, Growth, Content Strategy, Technical/UX/Ghostwriting, and Research work with six integrated persuasion frameworks (AIDA, Cialdini's six principles, StoryBrand/PAS/FAB/Schwartz/Made-to-Stick/Ogilvy/Hopkins, Schopenhauer's ethical eristic, Joe Girard's Law of 250, Cialdini Pre-Suasion), Features→Project→How→Benefits→Sales→Purchase content structure, and 15 quality tool gates.
 10. The `supreme-council` skill becomes **available on demand** — invoke `/supreme-council` (also responds to "council this", "pressure-test this", "stress-test this", "war room this") for ambiguous high-stakes decisions. Convenes four cognitive personas (First-Principle Thinker, Expansionist, Outsider, Executor), runs three rounds (individual → anonymous peer review → synthesis preserving dissent), produces a tabular report with consensus / contested / minority-preserved sections + premortem. Never tries to please you — honest assessment over comfortable answer is non-negotiable.
+11. The `supreme-benchmarking` skill becomes **available on demand** — invoke `/supreme-benchmarking` whenever a decision depends on a measured comparison (model choice, npm package adoption, performance claim, regression check). Applies the four personas to benchmark design, enforces preregistration + statistical rigor (CI95, multi-seed) + contamination defense + harness pinning, and delivers a benchmark card with tables, charts, raw data, and a one-command reproducibility package in the Anthropic / Hugging Face / Unsloth reporting style. Honest measurement over impressive numbers.
 
 ## What this bundle does
 
-The `supreme-coding-guidelines@ah-language` plugin bundles eight skills with distinct activation models:
+The `supreme-coding-guidelines@ah-language` plugin bundles nine skills with distinct activation models:
 
 | Skill | Activation | Purpose |
 |-------|------------|---------|
@@ -203,6 +204,7 @@ The `supreme-coding-guidelines@ah-language` plugin bundles eight skills with dis
 | `supreme-npm-node` | On demand via `/supreme-npm-node` | Principal NPM/NPX/NPMJS/Node engineering discipline (latest-version-always via `ncu -u`, TypeScript strict mode with all checks, package publishing with OIDC provenance, supply-chain audit gates, pnpm workspaces, continuous upgrade cadence) — serves Tech Leads, DevOps, Backend, Frontend, Product/AI/ML/LLM engineers, LLM architects, AI researchers, QA engineers, and Software Quality engineers |
 | `supreme-content-craft` | On demand via `/supreme-content-craft` | Principal content craft discipline (SEO, SEM, Header Binding HTML/HTTP/AdTech, Copywriting, Marketing, Branding, Growth, Content Strategy, Technical/UX/Ghostwriting) with six integrated persuasion frameworks (AIDA + Cialdini 6 principles + StoryBrand/PAS/FAB/Schwartz/SUCCESs/Ogilvy/Hopkins + Schopenhauer ethical eristic + Joe Girard Law of 250 + Cialdini Pre-Suasion), Features→Project→How→Benefits→Sales→Purchase content pattern, and 15 quality tool gates (Grammar, Paraphraser, Plagiarism, AI Detector, Humanizer, Translator, Summarizer, Citation, Readability Scorer, Tone Analyzer, Headline Analyzer, Schema Validator, Meta Generator, SERP-Backlink-Gap Analyzer, Image-Alt-OCR). Ethical persuasion only |
 | `supreme-council` | On demand via `/supreme-council` | Multi-perspective deliberation council for ambiguous high-stakes decisions. Four cognitive personas (First-Principle Thinker, Expansionist, Outsider, Executor) + three-round protocol (individual → anonymous peer review → synthesis preserving dissent) + Spec-Kit phasing + Klein premortem + Cynefin uncertainty handling. Tabular report with consensus/contested/minority-preserved/synthesis. Never tries to please the user — honest assessment over comfortable answer is non-negotiable |
+| `supreme-benchmarking` | On demand via `/supreme-benchmarking` | Research-grade benchmarking for AI/ML/LLM/npm projects inspired by OpenAI, Anthropic, Google DeepMind, xAI, DeepSeek, Xiaomi MiMo, Hugging Face, and Unsloth methodologies. Four personas applied to benchmark design + preregistration + statistical rigor gates (CI95, median+IQR, effect size, multi-seed variance) + contamination defense (canaries, n-gram, held-out sets) + LLM protocol (pass-at-k disclosure, harness commit pinning) + npm protocol (tinybench/mitata, hyperfine, size-limit) + benchmark-card reporting with bold-best tables, error bars, efficiency frontier, raw JSONL + one-command reproducibility + CI regression tracking. Honest measurement over impressive numbers |
 
 ### Behavioral rules of `supreme-coding-guidelines` (eight integrated sections)
 
@@ -236,6 +238,22 @@ The `supreme-coding-guidelines@ah-language` plugin bundles eight skills with dis
 - **Verify and validate** — Regression test at correct seam + eval suite rerun for AI/ML/LLM + dark launch shadow compare for production
 - **Structured tabular report** — Deliverable is a markdown table: problem / repro / hypothesis / evidence / fix / verification / owner / ETA
 - **Post-mortem and prevention** — Identify the architectural or process gap that allowed the bug; recommend systemic prevention
+
+### Benchmarking discipline of `supreme-benchmarking` (thirteen integrated sections)
+
+- **Invoke benchmark when appropriate** — before adopting a model/package/dependency, before publishing any performance claim, when regression is suspected, and as a continuous CI gate; every benchmark states in one sentence what decision it informs
+- **First-Principle: what are we actually measuring** — construct validity first; memorization is not reasoning; define the falsification condition before running; reject single-number summaries when the distribution is the honest answer
+- **Expansionist: ignored dimensions** — accuracy-only becomes multi-dimension (latency p50/p99/p99.9, cost, energy, memory, cold start); single-prompt becomes prompt-sensitivity spread across 3–5 paraphrases; single-seed becomes minimum-five-seed distribution; happy-path becomes adversarial/long-tail/multi-turn
+- **Outsider: bias removal + preregistration** — methodology, metrics, thresholds, and exclusion criteria preregistered before seeing any result; baseline integrity (re-run all baselines yourself, never copy numbers from papers); blind evaluation where possible; conflicts declared — a vendor-run benchmark is marketing until independently reproduced
+- **Executor: controlled run protocol** — pinned versions/harness/dataset/hardware, fixed seeds, minimum five runs, warmup discarded, isolated environment, append-only raw logs; if the result is uncomfortable, publish unchanged
+- **Statistical rigor gates** — every published number carries CI95 + sample size; median+IQR for skewed latency; significance test before claiming difference, effect size before claiming it matters; multiple-comparison correction; overlapping CIs = statistical tie, no superiority claim
+- **Contamination + saturation defense** — assume contamination until checked (n-gram overlap, canary strings, verbatim-reproduction probes); held-out private sets rotated when leaked; saturation check (top models clustering above 90% = benchmark lost discriminative power)
+- **LLM/ML benchmark protocol** — lm-eval-harness / lighteval / inspect-ai with pinned commit hash (harness changes swing scores 10–20 points); prompts and sampling params disclosed verbatim; identical harness + prompts + params for every model compared; Unsloth-style efficiency metrics (tokens/s, VRAM peak, TTFT, cost per million tokens)
+- **npm/Node benchmark protocol** — tinybench/mitata for micro (JIT warmup discarded, GC isolated), hyperfine for CLI (warmup flag, minimum ten runs), size-limit for bundles (minified/gzip/brotli); cold start measured separately from warm throughput; dependency benchmarks include install time, disk footprint, transitive count
+- **Anthropic/HF/Unsloth-style reporting** — benchmark card (analogous to a model card) published with results; tables with best bolded + CI column always present; bar charts with error bars, radar for multi-dimension, efficiency-frontier scatter (score vs cost); raw JSONL published alongside aggregates; negative and tie results in the main table, never buried
+- **Reproducibility package** — one-command re-run committed before results announced; seeds/configs/harness commit/dataset checksum/hardware in a single manifest; third-party reproduction explicitly invited
+- **Honest disclosure (never please)** — best-of-N and sampling params disclosed; if our system loses, publish unchanged with analysis; limitations section mandatory; marketing may not edit numbers after sign-off
+- **Continuous regression tracking** — benchmark in CI with threshold alerting and historical trend dashboard; saturated tasks retired, benchmark set expanded after each release
 
 ### Multi-persona council of `supreme-council` (twelve integrated sections)
 
@@ -329,6 +347,7 @@ The full table, EBNF grammar, and computation rules live in [`SPEC.md`](SPEC.md)
 - `skills/supreme-npm-node/SKILL.md` → `#> 1269`
 - `skills/supreme-content-craft/SKILL.md` → `#> 2602`
 - `skills/supreme-council/SKILL.md` → `#> 1773`
+- `skills/supreme-benchmarking/SKILL.md` → `#> 1928`
 
 Validate any `.ah` file with the bundled linter:
 
@@ -378,14 +397,16 @@ supreme-coding-guidelines-skill.ah/
 │   │   └── SKILL.md
 │   ├── supreme-content-craft/              ← SEO/SEM/Copywriting/Marketing/Writing with 6 persuasion frameworks + 15 quality tools (on demand)
 │   │   └── SKILL.md
-│   └── supreme-council/                    ← Multi-perspective deliberation council with 4 personas + premortem + dissent preservation (on demand)
+│   ├── supreme-council/                    ← Multi-perspective deliberation council with 4 personas + premortem + dissent preservation (on demand)
+│   │   └── SKILL.md
+│   └── supreme-benchmarking/               ← Research-grade benchmarking with statistical rigor + contamination defense + benchmark cards (on demand)
 │       └── SKILL.md
 ├── scripts/
 │   └── ah-lint                             ← Canonical .ah validator (Python CLI)
 ├── .claude-plugin/                         ← Claude Code plugin config
 │   ├── marketplace.json                    ← Marketplace listing (schemastore-validated)
 │   └── plugin.json                         ← Plugin manifest (schemastore-validated)
-├── .claude/                                ← Claude Code auto-apply rules (7 skills mirrored)
+├── .claude/                                ← Claude Code auto-apply rules (8 skills mirrored)
 │   └── rules/
 │       ├── supreme-coding-guidelines.md
 │       ├── supreme-project-audit.md
@@ -393,8 +414,9 @@ supreme-coding-guidelines-skill.ah/
 │       ├── supreme-ai-engineering.md
 │       ├── supreme-npm-node.md
 │       ├── supreme-content-craft.md
-│       └── supreme-council.md
-├── .cursor/                                ← Cursor auto-apply rules (7 skills mirrored)
+│       ├── supreme-council.md
+│       └── supreme-benchmarking.md
+├── .cursor/                                ← Cursor auto-apply rules (8 skills mirrored)
 │   └── rules/
 │       ├── supreme-coding-guidelines.mdc
 │       ├── supreme-project-audit.mdc
@@ -402,8 +424,9 @@ supreme-coding-guidelines-skill.ah/
 │       ├── supreme-ai-engineering.mdc
 │       ├── supreme-npm-node.mdc
 │       ├── supreme-content-craft.mdc
-│       └── supreme-council.mdc
-├── .trae/                                  ← Trae auto-apply rules (7 skills mirrored)
+│       ├── supreme-council.mdc
+│       └── supreme-benchmarking.mdc
+├── .trae/                                  ← Trae auto-apply rules (8 skills mirrored)
 │   └── rules/
 │       ├── supreme-coding-guidelines.md
 │       ├── supreme-project-audit.md
@@ -411,8 +434,9 @@ supreme-coding-guidelines-skill.ah/
 │       ├── supreme-ai-engineering.md
 │       ├── supreme-npm-node.md
 │       ├── supreme-content-craft.md
-│       └── supreme-council.md
-├── .zed/                                   ← Zed auto-apply rules (7 skills mirrored)
+│       ├── supreme-council.md
+│       └── supreme-benchmarking.md
+├── .zed/                                   ← Zed auto-apply rules (8 skills mirrored)
 │   └── rules/
 │       ├── supreme-coding-guidelines.md
 │       ├── supreme-project-audit.md
@@ -420,8 +444,9 @@ supreme-coding-guidelines-skill.ah/
 │       ├── supreme-ai-engineering.md
 │       ├── supreme-npm-node.md
 │       ├── supreme-content-craft.md
-│       └── supreme-council.md
-├── .kiro/                                  ← Kiro auto-apply rules (7 skills mirrored; IDE added in v1.3.0)
+│       ├── supreme-council.md
+│       └── supreme-benchmarking.md
+├── .kiro/                                  ← Kiro auto-apply rules (8 skills mirrored; IDE added in v1.3.0)
 │   └── rules/
 │       ├── supreme-coding-guidelines.md
 │       ├── supreme-project-audit.md
@@ -429,7 +454,8 @@ supreme-coding-guidelines-skill.ah/
 │       ├── supreme-ai-engineering.md
 │       ├── supreme-npm-node.md
 │       ├── supreme-content-craft.md
-│       └── supreme-council.md
+│       ├── supreme-council.md
+│       └── supreme-benchmarking.md
 └── examples/                               ← Before/after demonstrations
     ├── INFO.md
     ├── before-after.md
@@ -440,7 +466,7 @@ supreme-coding-guidelines-skill.ah/
 
 ## How to use / install `.claude-plugin`
 
-The repo's `.claude-plugin/plugin.json` is a single Claude Code plugin named `supreme-coding-guidelines` that auto-discovers all eight skills (`ah-parser`, `supreme-coding-guidelines`, `supreme-project-audit`, `supreme-problem-solving`, `supreme-ai-engineering`, `supreme-npm-node`, `supreme-content-craft`, `supreme-council`) from the `skills/` directory. The `.claude-plugin/marketplace.json` advertises this plugin in the `ah-language` marketplace.
+The repo's `.claude-plugin/plugin.json` is a single Claude Code plugin named `supreme-coding-guidelines` that auto-discovers all nine skills (`ah-parser`, `supreme-coding-guidelines`, `supreme-project-audit`, `supreme-problem-solving`, `supreme-ai-engineering`, `supreme-npm-node`, `supreme-content-craft`, `supreme-council`, `supreme-benchmarking`) from the `skills/` directory. The `.claude-plugin/marketplace.json` advertises this plugin in the `ah-language` marketplace.
 
 ```bash
 # Claude Code native
@@ -465,7 +491,8 @@ Both manifests are validated against the canonical schemas at [schemastore.org](
 
 ## Roadmap
 
-- **v1.6.0 (current)** — adds `supreme-council` skill: principal multi-perspective deliberation council for ambiguous high-stakes decisions across Product, Engineering, AI/ML/LLM Architecture, Research, Operations, Strategy; convenes four distinct cognitive personas (First-Principle Thinker, Expansionist, Outsider, Executor); runs three-round protocol (individual → anonymous peer review → synthesis preserving dissent); integrates Spec-Kit phasing + Klein premortem + Cynefin uncertainty handling + tabular report + post-decision calibration loop; never tries to please the user
+- **v1.7.0 (current)** — adds `supreme-benchmarking` skill: research-grade benchmarking for AI/ML/LLM/npm projects inspired by OpenAI, Anthropic, Google DeepMind, xAI, DeepSeek, Xiaomi MiMo, Hugging Face, and Unsloth methodologies; four personas applied to benchmark design; preregistration + statistical rigor gates (CI95, multi-seed variance, effect size) + contamination defense (canaries, n-gram, held-out sets) + harness commit pinning + npm protocol (tinybench/mitata, hyperfine, size-limit) + benchmark-card reporting with bold-best tables, error bars, efficiency frontier, raw JSONL + one-command reproducibility + CI regression tracking; honest measurement over impressive numbers
+- **v1.6.0** — added `supreme-council` skill: principal multi-perspective deliberation council for ambiguous high-stakes decisions across Product, Engineering, AI/ML/LLM Architecture, Research, Operations, Strategy; convenes four distinct cognitive personas (First-Principle Thinker, Expansionist, Outsider, Executor); runs three-round protocol (individual → anonymous peer review → synthesis preserving dissent); integrates Spec-Kit phasing + Klein premortem + Cynefin uncertainty handling + tabular report + post-decision calibration loop; never tries to please the user
 - **v1.5.0** — added `supreme-content-craft` skill: principal content craft discipline for SEO, SEM, Header Binding (HTML/HTTP/AdTech), Copywriting, Marketing, Branding, Growth, Content Strategy, Technical/UX/Ghostwriting, Writers, Authors, Researchers, Editors; integrates six persuasion frameworks (AIDA, Cialdini, StoryBrand/PAS/FAB/Schwartz/SUCCESs/Ogilvy/Hopkins, Schopenhauer ethical eristic, Joe Girard Law of 250, Cialdini Pre-Suasion); Features→Project→How→Benefits→Sales→Purchase content structure; 15 quality tool gates; ethical persuasion only
 - **v1.4.0** — added `supreme-npm-node` skill: principal NPM/NPX/NPMJS/Node engineering discipline for Tech Leads, DevOps, Backend, Frontend, Product/AI/ML/LLM engineers, LLM architects, AI researchers, QA engineers, and Software Quality engineers (latest-version-always via `ncu -u`, TypeScript strict mode, package publishing discipline, OIDC provenance, supply-chain audit gates, pnpm workspaces)
 - **v1.3.0** — added `supreme-ai-engineering` skill: principal AI engineering discipline for Product/AI/ML/LLM engineers, LLM architects, AI researchers, QA engineers, and Software Quality engineers building production AI/ML/LLM/MLOps/LLMOps systems

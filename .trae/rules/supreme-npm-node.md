@@ -2,7 +2,7 @@
 name: supreme-npm-node
 description: Principal NPM/NPX/NPMJS/Node engineering with latest-version-always policy via ncu -u, TypeScript strict mode, package.json discipline, OIDC provenance, supply-chain audit, pnpm workspaces. On-demand in Trae.
 author: David C. Cavalcante
-version: 1.6.0
+version: 1.7.0
 alwaysApply: false
 ---
 

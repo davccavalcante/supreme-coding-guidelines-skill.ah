@@ -2,7 +2,7 @@
 name: supreme-council
 description: Principal multi-perspective deliberation council for ambiguous high-stakes decisions. Four cognitive personas (First-Principle Thinker, Expansionist, Outsider, Executor) + three-round protocol (individual then anonymous peer review then synthesis preserving dissent) + Spec-Kit phasing + Klein premortem + Cynefin uncertainty handling + tabular report. Never tries to please the user — honest assessment over comfortable answer. On-demand in Zed.
 author: David C. Cavalcante
-version: 1.6.0
+version: 1.7.0
 alwaysApply: false
 ---
 

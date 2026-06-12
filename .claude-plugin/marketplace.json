@@ -1,8 +1,8 @@
 {
   "$schema": "https://www.schemastore.org/claude-code-marketplace.json",
   "name": "ah-language",
-  "version": "1.6.0",
-  "description": "Marketplace for the .ah Teleological Semantic Format ecosystem by David C. Cavalcante. Hosts the supreme-coding-guidelines plugin (bundles the ah-parser bootstrap, the always-on coding-guidelines behavior, the on-demand supreme-project-audit skill, the on-demand supreme-problem-solving skill, the on-demand supreme-ai-engineering skill, the on-demand supreme-npm-node skill, the on-demand supreme-content-craft skill, and the on-demand supreme-council skill).",
+  "version": "1.7.0",
+  "description": "Marketplace for the .ah Teleological Semantic Format ecosystem by David C. Cavalcante. Hosts the supreme-coding-guidelines plugin (bundles the ah-parser bootstrap, the always-on coding-guidelines behavior, the on-demand supreme-project-audit skill, the on-demand supreme-problem-solving skill, the on-demand supreme-ai-engineering skill, the on-demand supreme-npm-node skill, the on-demand supreme-content-craft skill, the on-demand supreme-council skill, and the on-demand supreme-benchmarking skill).",
   "owner": {
     "name": "David C. Cavalcante",
     "url": "https://github.com/davccavalcante"
@@ -14,8 +14,8 @@
         "source": "github",
         "repo": "davccavalcante/supreme-coding-guidelines-skill.ah"
       },
-      "version": "1.6.0",
-      "description": ".ah skill bundle for Claude Code. Token compression + surgical behavior + disciplined diagnosis + TDD + architectural control + evidence-driven audit + genuine problem-solving + principal AI engineering + latest-always NPM/Node + principal content craft + multi-persona deliberation council (First-Principle Thinker + Expansionist + Outsider + Executor with three-round anonymous peer review preserving dissent). Bundles eight skills: ah-parser, supreme-coding-guidelines (always-on), supreme-project-audit, supreme-problem-solving, supreme-ai-engineering, supreme-npm-node, supreme-content-craft, supreme-council (all on-demand). User code is always preserved verbatim.",
+      "version": "1.7.0",
+      "description": ".ah skill bundle for Claude Code. Token compression + surgical behavior + disciplined diagnosis + TDD + architectural control + evidence-driven audit + genuine problem-solving + principal AI engineering + latest-always NPM/Node + principal content craft + multi-persona deliberation council + research-grade benchmarking (statistical rigor, contamination defense, Anthropic/HF/Unsloth-style reporting, honest disclosure). Bundles nine skills: ah-parser, supreme-coding-guidelines (always-on), supreme-project-audit, supreme-problem-solving, supreme-ai-engineering, supreme-npm-node, supreme-content-craft, supreme-council, supreme-benchmarking (all on-demand). User code is always preserved verbatim.",
       "category": "productivity",
       "license": "MIT",
       "keywords": [
