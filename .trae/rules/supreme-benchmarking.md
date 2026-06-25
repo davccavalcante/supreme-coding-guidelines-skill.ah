@@ -1,8 +1,8 @@
 ---
 name: supreme-benchmarking
-description: Principal research and data-science benchmarking discipline for AI/ML/LLM/npm projects inspired by OpenAI, Anthropic, Google DeepMind, xAI, DeepSeek, Xiaomi MiMo, Hugging Face, and Unsloth methodologies. Four personas applied to benchmark design (First-Principle construct validity, Expansionist ignored dimensions, Outsider preregistration and baseline integrity, Executor controlled protocol publishing uncomfortable results unchanged) + statistical rigor gates (CI95, median+IQR, effect size, multi-seed) + contamination defense (canaries, n-gram, held-out) + LLM protocol (pass-at-k, harness pinning via lm-eval-harness/lighteval/inspect-ai/promptfoo) + npm protocol (tinybench/mitata, hyperfine, size-limit) + Anthropic/HF/Unsloth-style reporting (benchmark card, bold-best tables, error bars, efficiency frontier) + one-command reproducibility + honest disclosure + CI regression tracking. Honest measurement over impressive numbers. On-demand in Trae.
+description: Principal research and data-science benchmarking discipline for AI/ML/LLM/npm projects inspired by OpenAI, Anthropic, Google DeepMind, xAI, DeepSeek, Xiaomi MiMo, Hugging Face, and Unsloth methodologies. Four personas applied to benchmark design + statistical rigor gates (CI95, multi-seed) + contamination defense + harness pinning + npm protocol (tinybench/mitata, hyperfine, size-limit) + benchmark-card reporting + one-command reproducibility + honest disclosure + CI regression tracking. Honest measurement over impressive numbers. On-demand in Trae.
 author: David C. Cavalcante
-version: 1.7.0
+version: 1.8.0
 alwaysApply: false
 ---
 
