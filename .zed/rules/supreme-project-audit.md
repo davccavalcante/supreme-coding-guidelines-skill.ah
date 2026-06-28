@@ -2,7 +2,7 @@
 name: supreme-project-audit
 description: Evidence-driven full-project audit (P0-P3 severity, coverage maps, STRIDE + OWASP LLM Top 10 threat modeling, reproducibility, tabular report). On-demand in Zed.
 author: David C. Cavalcante
-version: 1.8.0
+version: 1.9.0
 alwaysApply: false
 ---
 

@@ -2,7 +2,7 @@
 name: supreme-problem-solving
 description: Genuine problem-solving with precise statements, deterministic reproduction, 3-5 ranked falsifiable hypotheses, instrumented evidence, minimum-invasive fixes, structured tabular deliverable. On-demand in Claude Code.
 author: David C. Cavalcante
-version: 1.8.0
+version: 1.9.0
 alwaysApply: false
 ---
 

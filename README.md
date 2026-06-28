@@ -1,8 +1,8 @@
 # Supreme Coding Guidelines Skill .ah
 
-![.AH](https://img.shields.io/badge/AH_Language-1.8.0-black.svg)
-![SKILL](https://img.shields.io/badge/SKILL-1.8.0-black.svg)
-![Version](https://img.shields.io/badge/version-1.8.0-black.svg)
+![.AH](https://img.shields.io/badge/AH_Language-1.9.0-black.svg)
+![SKILL](https://img.shields.io/badge/SKILL-1.9.0-black.svg)
+![Version](https://img.shields.io/badge/version-1.9.0-black.svg)
 ![License](https://img.shields.io/badge/license-MIT-black.svg)
 
 [![Star History Chart](https://api.star-history.com/svg?repos=davccavalcante/supreme-coding-guidelines-skill.ah&type=timeline&legend=top-left)](https://www.star-history.com/#davccavalcante/supreme-coding-guidelines-skill.ah&type=timeline&legend=top-left)
@@ -165,7 +165,7 @@ graph TD
 # 1. Add this repo as a Claude Code marketplace
 /plugin marketplace add davccavalcante/supreme-coding-guidelines-skill.ah
 
-# 2. Install the bundled plugin (auto-discovers ah-parser + supreme-coding-guidelines + supreme-project-audit + supreme-problem-solving + supreme-ai-engineering + supreme-npm-node + supreme-content-craft + supreme-council + supreme-benchmarking + supreme-diagramming)
+# 2. Install the bundled plugin (auto-discovers ah-parser + supreme-coding-guidelines + supreme-project-audit + supreme-problem-solving + supreme-ai-engineering + supreme-npm-node + supreme-content-craft + supreme-council + supreme-benchmarking + supreme-diagramming + supreme-ai-governance)
 /plugin install supreme-coding-guidelines@ah-language
 ```
 
@@ -190,10 +190,11 @@ npx skills add https://github.com/davccavalcante/supreme-coding-guidelines-skill
 10. The `supreme-council` skill becomes **available on demand** — invoke `/supreme-council` (also responds to "council this", "pressure-test this", "stress-test this", "war room this") for ambiguous high-stakes decisions. Convenes four cognitive personas (First-Principle Thinker, Expansionist, Outsider, Executor), runs three rounds (individual → anonymous peer review → synthesis preserving dissent), produces a tabular report with consensus / contested / minority-preserved sections + premortem. Never tries to please you — honest assessment over comfortable answer is non-negotiable.
 11. The `supreme-benchmarking` skill becomes **available on demand** — invoke `/supreme-benchmarking` whenever a decision depends on a measured comparison (model choice, npm package adoption, performance claim, regression check). Applies the four personas to benchmark design, enforces preregistration + statistical rigor (CI95, multi-seed) + contamination defense + harness pinning, and delivers a benchmark card with tables, charts, raw data, and a one-command reproducibility package in the Anthropic / Hugging Face / Unsloth reporting style. Honest measurement over impressive numbers.
 12. The `supreme-diagramming` skill becomes **available on demand** — invoke `/supreme-diagramming` for architecture, flow, ERD, sequence, class, C4, and state diagrams that must stay in sync with the repo. Describes the diagram in a deterministic declarative layer validated by gematria checksum, compiles to a portable target (Mermaid, D2, draw.io XML, Excalidraw), runs deterministic structural + aesthetic checks before any vision pass, keeps the diagram as a versioned file next to the code, and degrades gracefully to Mermaid/D2 text with no heavy desktop dependency. Deterministic validation over probabilistic vision; living artifact over one-shot export.
+13. The `supreme-ai-governance` skill becomes **available on demand** — invoke `/supreme-ai-governance` to assess, design, operate, audit, and evidence an AI Management System and multi-jurisdiction regulatory compliance. Operationalizes ISO/IEC 42001:2023 (AIMS clauses 4–10, ~38 Annex A controls, Statement of Applicability, AI System Impact Assessment backed by ISO/IEC 42005:2025), the EU AI Act (risk tiers, GPAI and systemic-risk obligations, conformity assessment, FRIA, penalties, the June 2026 Digital Omnibus timeline), the NIST AI RMF (GOVERN/MAP/MEASURE/MANAGE), and the global regulatory map (US/UK/China/Canada/Brazil + OECD/UNESCO/Council-of-Europe/G7/UN). Four cognitive lenses (First-Principle Thinker, Expansionist, Outsider, Executor) that never try to please — reports real exposure instead of a green dashboard. Delivers a gap assessment, Statement of Applicability, control map, evidence register, and remediation roadmap. Compliance-engineering structure, not legal advice — verify current law because regulation moves.
 
 ## What this bundle does
 
-The `supreme-coding-guidelines@ah-language` plugin bundles ten skills with distinct activation models:
+The `supreme-coding-guidelines@ah-language` plugin bundles eleven skills with distinct activation models:
 
 | Skill | Activation | Purpose |
 |-------|------------|---------|
@@ -207,6 +208,7 @@ The `supreme-coding-guidelines@ah-language` plugin bundles ten skills with disti
 | `supreme-council` | On demand via `/supreme-council` | Multi-perspective deliberation council for ambiguous high-stakes decisions. Four cognitive personas (First-Principle Thinker, Expansionist, Outsider, Executor) + three-round protocol (individual → anonymous peer review → synthesis preserving dissent) + Spec-Kit phasing + Klein premortem + Cynefin uncertainty handling. Tabular report with consensus/contested/minority-preserved/synthesis. Never tries to please the user — honest assessment over comfortable answer is non-negotiable |
 | `supreme-benchmarking` | On demand via `/supreme-benchmarking` | Research-grade benchmarking for AI/ML/LLM/npm projects inspired by OpenAI, Anthropic, Google DeepMind, xAI, DeepSeek, Xiaomi MiMo, Hugging Face, and Unsloth methodologies. Four personas applied to benchmark design + preregistration + statistical rigor gates (CI95, median+IQR, effect size, multi-seed variance) + contamination defense (canaries, n-gram, held-out sets) + LLM protocol (pass-at-k disclosure, harness commit pinning) + npm protocol (tinybench/mitata, hyperfine, size-limit) + benchmark-card reporting with bold-best tables, error bars, efficiency frontier, raw JSONL + one-command reproducibility + CI regression tracking. Honest measurement over impressive numbers |
 | `supreme-diagramming` | On demand via `/supreme-diagramming` | Living-diagram companion for architecture, flow, ERD, sequence, class, C4, and state diagrams. Describe-first pipeline (natural language → deterministic declarative spec → gematria-checksum validation → compile to Mermaid/D2/draw.io XML/Excalidraw, no proprietary lock-in) + deterministic structural & aesthetic verification first with model vision only as last-resort reinforcement + diagram-as-versioned-file-next-to-code diffed in pull requests + memory of prior diagrams to evolve not recreate + graceful degradation to Mermaid/D2 text with no heavy desktop dependency. Deterministic validation over probabilistic vision, living artifact over one-shot export, portable format over lock-in |
+| `supreme-ai-governance` | On demand via `/supreme-ai-governance` | First-in-the-world AI governance & compliance discipline. Operationalizes ISO/IEC 42001:2023 (AIMS clauses 4–10, ~38 Annex A controls across 9 objectives A.2–A.10, Statement of Applicability, AI System Impact Assessment via ISO/IEC 42005:2025) + the EU AI Act (prohibited/high-risk/transparency tiers, GPAI & systemic-risk, conformity assessment, CE marking, EU DB registration, FRIA, post-market monitoring, serious-incident reporting, penalties to 35M EUR or 7%, the June 2026 Digital Omnibus timeline) + the NIST AI RMF (GOVERN/MAP/MEASURE/MANAGE + GenAI Profile) + the global regulatory map (US executive orders & state law, UK, China, Canada Quebec Law 25, Brazil PL 2338, OECD/UNESCO/Council-of-Europe/G7/UN) + sectoral overlays (GDPR Art 22, financial model risk, medical devices, employment bias audit). Integrates with ISO/IEC 27001/27701 and ISO 9001 via the Harmonized Structure. Four cognitive lenses (First-Principle, Expansionist, Outsider, Executor) that never try to please. Delivers a gap assessment, SoA, control map, evidence register, and remediation roadmap. Compliance-engineering structure, not legal advice |
 
 ### Behavioral rules of `supreme-coding-guidelines` (eight integrated sections)
 
@@ -321,6 +323,25 @@ The `supreme-coding-guidelines@ah-language` plugin bundles ten skills with disti
 - **Quality engineering, testing, and research rigor** — Golden test sets + regression + fairness + safety eval gates in CI; per-role rules for LLM, ML, RAG; statistical significance + ablation completeness + dataset contamination for researchers
 - **Operational excellence and continuous refinement** — Observability + runbooks + on-call rotation + SLO review cadence before launch; post-incident review feeds eval set expansion and guardrail tightening
 
+### AI governance & compliance discipline of `supreme-ai-governance` (sixteen integrated sections)
+
+- **Invoke governance when appropriate** — before placing/deploying AI in a regulated domain, before EU market placement, when seeking ISO 42001 certification, or when a board/customer/regulator demands governance evidence; redirect pure infosec to ISO 27001 and pure privacy to 27701
+- **First-Principle (what governance is actually for)** — prevent harm to people and produce accountable evidence, not generate paperwork; define what would falsify a claim of responsible governance; reject cargo-cult controls that treat no real identified risk
+- **Expansionist (ignored obligations + opportunities)** — surface multi-jurisdiction reach, overlapping regimes (GDPR Art 22, sector rules), GPAI and supply-chain duties; reframe certification as market access and an EU AI Act head-start
+- **Outsider (regulator / auditor / claimant view)** — what evidence an auditor demands on day one; what we are mislabelling low-risk to avoid work; symmetric skepticism (would we accept this governance from a vendor we are buying from?); name the shadow-AI elephant
+- **Executor (honest gap, never please)** — if the system is prohibited under Art 5, say it ships nothing; if a deadline is missed or an impact assessment is absent, say so with the clause/article; at least one uncomfortable truth or explicit confirmation of none
+- **ISO 42001 AIMS clauses 4–10** — context + roles + scope, leadership + AI policy, planning (risk assessment, risk treatment + SoA, impact assessment, objectives), support, operation, performance evaluation (internal audit, management review), improvement; Harmonized Structure bolts onto an existing management system
+- **Annex A controls + Statement of Applicability** — ~38 reference controls across 9 objectives (A.2–A.10); Annex A is a reference set, not a checklist; the SoA justifies inclusion AND exclusion against the risk assessment; no orphan control, no untreated risk
+- **AI System Impact Assessment** — clauses 6.1.4/8.4 + control A.5, backed by ISO/IEC 42005:2025; assesses consequences to individuals, groups, and society; distinguished from the EU FRIA (Art 27) and the GDPR DPIA (Art 35) — different triggers and scopes, never conflated
+- **EU AI Act risk tiers + timeline** — prohibited (Art 5), high-risk (Annex I + Annex III), transparency (Art 50), minimal; the June 2026 Digital Omnibus defers high-risk obligations toward Dec 2027 / Aug 2028, but until OJ publication the original dates legally stand — verify the adopted text
+- **High-risk + GPAI + roles + conformity** — provider duties Art 8–15, QMS Art 17, conformity assessment (Annex VI/VII), CE marking, EU database registration, FRIA, post-market monitoring, serious-incident reporting; GPAI obligations + the 10^25 FLOP systemic-risk threshold + the GPAI Code of Practice; provider/deployer/importer/distributor + Art 25 role-shift; penalties 35M/7%, 15M/3%, 7.5M/1%; ISO 42001 is NOT a harmonized standard (presumption of conformity flows from CEN-CENELEC JTC21 standards and prEN 18286)
+- **NIST AI RMF + framework crosswalk** — GOVERN/MAP/MEASURE/MANAGE + the Generative AI Profile NIST-AI-600-1; crosswalk to ISO clauses; map controls once, satisfy many frameworks
+- **Global regulatory map beyond the EU** — US (no federal statute; executive orders + state law: Texas in force, Colorado deferred to 2027, California, Utah, Illinois), UK (principles-based + Data Use and Access Act 2025), China (generative-AI + AI-content labeling GB 45438-2025), Canada (Quebec Law 25 after AIDA lapsed), Brazil (PL 2338 in committee), and the OECD/UNESCO/Council-of-Europe/G7/UN instruments
+- **Sectoral + cross-cutting overlays** — GDPR Art 22 + DPIA, financial model risk (SR 11-7 superseded by the 2026 interagency guidance), medical-device regimes (FDA PCCP, EU MDR Rule 11 → AI Act Annex I), employment bias-audit law (NYC LL144, Illinois, Mobley v. Workday)
+- **Standards ecosystem + integration** — the ISO/IEC SC42 family (22989, 23894, 5338, 5259, 25059, 42005, 42006, 38507) integrated through the Harmonized Structure with ISO/IEC 27001, ISO/IEC 27701, and ISO 9001 (the Big-3 plus 42001) via a combined Statement of Applicability
+- **Conformity assessment + certification + evidence** — Stage 1 → Stage 2 → annual surveillance → 3-year recertification; accredited (UKAS/ANAB/RvA under ISO 42006) over self-declared; every control traces to a risk and every claim to a dated artifact; the EU AI Act conformity route is not the ISO certificate
+- **Operate, measure, improve + deliverable** — risk and impact assessments at planned intervals and on significant change, event logs, post-market monitoring, incident reporting; deliverable is a gap table (requirement / source / status / evidence / gap / severity / owner / remediation / deadline) plus SoA, control map, evidence register, and remediation roadmap; re-run when regulation changes
+
 ### UX guarantees (`.ah` differentiators vs Caveman / Karpathy / Matt Pocock)
 
 - **Three-mode output protocol** — the user chooses between normal language, `.ah` structured form, or `.ah` compact form. The choice persists for the session and is toggleable mid-session. No competitor offers this.
@@ -362,6 +383,7 @@ The full table, EBNF grammar, and computation rules live in [`SPEC.md`](SPEC.md)
 - `skills/supreme-council/SKILL.md` → `#> 1773`
 - `skills/supreme-benchmarking/SKILL.md` → `#> 1928`
 - `skills/supreme-diagramming/SKILL.md` → `#> 1188`
+- `skills/supreme-ai-governance/SKILL.md` → `#> 2381`
 
 Validate any `.ah` file with the bundled linter:
 
@@ -377,13 +399,13 @@ Every behavioral skill is mirrored into five IDE rule directories so that auto-a
 
 | IDE | Directory | Format | Mirrored skills |
 |-----|-----------|--------|-----------------|
-| Claude Code | `.claude/rules/` | `.md` | 4 |
-| Cursor | `.cursor/rules/` | `.mdc` | 4 |
-| Trae | `.trae/rules/` | `.md` | 4 |
-| Zed | `.zed/rules/` | `.md` | 4 |
-| Kiro | `.kiro/rules/` | `.md` | 4 |
+| Claude Code | `.claude/rules/` | `.md` | 10 |
+| Cursor | `.cursor/rules/` | `.mdc` | 10 |
+| Trae | `.trae/rules/` | `.md` | 10 |
+| Zed | `.zed/rules/` | `.md` | 10 |
+| Kiro | `.kiro/rules/` | `.md` | 10 |
 
-The four mirrored skills are `supreme-coding-guidelines` (`alwaysApply: true`), `supreme-project-audit`, `supreme-problem-solving`, and `supreme-ai-engineering` (each with `alwaysApply: false` for on-demand invocation). The `ah-parser` is a session bootstrap and is loaded via the plugin, not as an IDE rule.
+The ten mirrored skills are `supreme-coding-guidelines` (`alwaysApply: true`, always-on) plus the nine on-demand skills `supreme-project-audit`, `supreme-problem-solving`, `supreme-ai-engineering`, `supreme-npm-node`, `supreme-content-craft`, `supreme-council`, `supreme-benchmarking`, `supreme-diagramming`, and `supreme-ai-governance` (each with `alwaysApply: false` for on-demand invocation). The `ah-parser` is a session bootstrap and is loaded via the plugin, not as an IDE rule.
 
 ## Repository Structure
 
@@ -416,14 +438,16 @@ supreme-coding-guidelines-skill.ah/
 │   │   └── SKILL.md
 │   ├── supreme-benchmarking/               ← Research-grade benchmarking with statistical rigor + contamination defense + benchmark cards (on demand)
 │   │   └── SKILL.md
-│   └── supreme-diagramming/                ← Living-diagram companion: declarative layer + checksum + compile to Mermaid/D2/draw.io/Excalidraw (on demand)
+│   ├── supreme-diagramming/                ← Living-diagram companion: declarative layer + checksum + compile to Mermaid/D2/draw.io/Excalidraw (on demand)
+│   │   └── SKILL.md
+│   └── supreme-ai-governance/              ← ISO 42001 + EU AI Act + NIST RMF + global regulatory map: AI governance & compliance (on demand)
 │       └── SKILL.md
 ├── scripts/
 │   └── ah-lint                             ← Canonical .ah validator (Python CLI)
 ├── .claude-plugin/                         ← Claude Code plugin config
 │   ├── marketplace.json                    ← Marketplace listing (schemastore-validated)
 │   └── plugin.json                         ← Plugin manifest (schemastore-validated)
-├── .claude/                                ← Claude Code auto-apply rules (9 skills mirrored)
+├── .claude/                                ← Claude Code auto-apply rules (10 skills mirrored)
 │   └── rules/
 │       ├── supreme-coding-guidelines.md
 │       ├── supreme-project-audit.md
@@ -433,8 +457,9 @@ supreme-coding-guidelines-skill.ah/
 │       ├── supreme-content-craft.md
 │       ├── supreme-council.md
 │       ├── supreme-benchmarking.md
-│       └── supreme-diagramming.md
-├── .cursor/                                ← Cursor auto-apply rules (9 skills mirrored)
+│       ├── supreme-diagramming.md
+│       └── supreme-ai-governance.md
+├── .cursor/                                ← Cursor auto-apply rules (10 skills mirrored)
 │   └── rules/
 │       ├── supreme-coding-guidelines.mdc
 │       ├── supreme-project-audit.mdc
@@ -444,8 +469,9 @@ supreme-coding-guidelines-skill.ah/
 │       ├── supreme-content-craft.mdc
 │       ├── supreme-council.mdc
 │       ├── supreme-benchmarking.mdc
-│       └── supreme-diagramming.mdc
-├── .trae/                                  ← Trae auto-apply rules (9 skills mirrored)
+│       ├── supreme-diagramming.mdc
+│       └── supreme-ai-governance.mdc
+├── .trae/                                  ← Trae auto-apply rules (10 skills mirrored)
 │   └── rules/
 │       ├── supreme-coding-guidelines.md
 │       ├── supreme-project-audit.md
@@ -455,8 +481,9 @@ supreme-coding-guidelines-skill.ah/
 │       ├── supreme-content-craft.md
 │       ├── supreme-council.md
 │       ├── supreme-benchmarking.md
-│       └── supreme-diagramming.md
-├── .zed/                                   ← Zed auto-apply rules (9 skills mirrored)
+│       ├── supreme-diagramming.md
+│       └── supreme-ai-governance.md
+├── .zed/                                   ← Zed auto-apply rules (10 skills mirrored)
 │   └── rules/
 │       ├── supreme-coding-guidelines.md
 │       ├── supreme-project-audit.md
@@ -466,8 +493,9 @@ supreme-coding-guidelines-skill.ah/
 │       ├── supreme-content-craft.md
 │       ├── supreme-council.md
 │       ├── supreme-benchmarking.md
-│       └── supreme-diagramming.md
-├── .kiro/                                  ← Kiro auto-apply rules (9 skills mirrored; IDE added in v1.3.0)
+│       ├── supreme-diagramming.md
+│       └── supreme-ai-governance.md
+├── .kiro/                                  ← Kiro auto-apply rules (10 skills mirrored; IDE added in v1.3.0)
 │   └── rules/
 │       ├── supreme-coding-guidelines.md
 │       ├── supreme-project-audit.md
@@ -477,7 +505,8 @@ supreme-coding-guidelines-skill.ah/
 │       ├── supreme-content-craft.md
 │       ├── supreme-council.md
 │       ├── supreme-benchmarking.md
-│       └── supreme-diagramming.md
+│       ├── supreme-diagramming.md
+│       └── supreme-ai-governance.md
 └── examples/                               ← Before/after demonstrations
     ├── INFO.md
     ├── before-after.md
@@ -488,7 +517,7 @@ supreme-coding-guidelines-skill.ah/
 
 ## How to use / install `.claude-plugin`
 
-The repo's `.claude-plugin/plugin.json` is a single Claude Code plugin named `supreme-coding-guidelines` that auto-discovers all ten skills (`ah-parser`, `supreme-coding-guidelines`, `supreme-project-audit`, `supreme-problem-solving`, `supreme-ai-engineering`, `supreme-npm-node`, `supreme-content-craft`, `supreme-council`, `supreme-benchmarking`, `supreme-diagramming`) from the `skills/` directory. The `.claude-plugin/marketplace.json` advertises this plugin in the `ah-language` marketplace.
+The repo's `.claude-plugin/plugin.json` is a single Claude Code plugin named `supreme-coding-guidelines` that auto-discovers all eleven skills (`ah-parser`, `supreme-coding-guidelines`, `supreme-project-audit`, `supreme-problem-solving`, `supreme-ai-engineering`, `supreme-npm-node`, `supreme-content-craft`, `supreme-council`, `supreme-benchmarking`, `supreme-diagramming`, `supreme-ai-governance`) from the `skills/` directory. The `.claude-plugin/marketplace.json` advertises this plugin in the `ah-language` marketplace.
 
 ```bash
 # Claude Code native
@@ -513,7 +542,8 @@ Both manifests are validated against the canonical schemas at [schemastore.org](
 
 ## Roadmap
 
-- **v1.8.0 (current)** — adds `supreme-diagramming` skill: living-diagram companion for architecture/flow/ERD/sequence/class/C4/state diagrams; describe-first declarative layer validated by gematria checksum, compiled to portable Mermaid/D2/draw.io/Excalidraw with no lock-in; deterministic-verification-first with vision only as reinforcement; diagram-as-versioned-file diffed in PRs; memory of prior diagrams; graceful degradation with no heavy desktop dependency
+- **v1.9.0 (current)** — adds `supreme-ai-governance` skill: first-in-the-world AI governance & compliance discipline operationalizing ISO/IEC 42001:2023 (AI Management System clauses 4–10, ~38 Annex A controls across 9 objectives, Statement of Applicability, AI System Impact Assessment backed by ISO/IEC 42005:2025), the EU AI Act (prohibited/high-risk/transparency tiers, GPAI and systemic-risk obligations, conformity assessment, CE marking, EU database registration, FRIA, post-market monitoring, serious-incident reporting, penalties up to 35M EUR or 7% of global turnover, and the June 2026 Digital Omnibus timeline deferring high-risk obligations toward December 2027 and August 2028), the NIST AI Risk Management Framework (GOVERN/MAP/MEASURE/MANAGE + the Generative AI Profile NIST-AI-600-1), and the global regulatory map beyond the EU (US executive orders and Texas/Colorado/California/Utah/Illinois state law, UK principles-based approach and the Data Use and Access Act 2025, China generative-AI and AI-content labeling rules, Canada Quebec Law 25 after AIDA lapsed, Brazil PL 2338, and the OECD/UNESCO/Council-of-Europe/G7/UN instruments) plus sectoral overlays (GDPR Art 22, financial model risk, medical devices, employment bias audit); integrates with ISO/IEC 27001/27701 and ISO 9001 via the Harmonized Structure; four cognitive lenses (First-Principle, Expansionist, Outsider, Executor) that never try to please; delivers a gap assessment, Statement of Applicability, control map, evidence register, and remediation roadmap; compliance-engineering structure, not legal advice
+- **v1.8.0** — adds `supreme-diagramming` skill: living-diagram companion for architecture/flow/ERD/sequence/class/C4/state diagrams; describe-first declarative layer validated by gematria checksum, compiled to portable Mermaid/D2/draw.io/Excalidraw with no lock-in; deterministic-verification-first with vision only as reinforcement; diagram-as-versioned-file diffed in PRs; memory of prior diagrams; graceful degradation with no heavy desktop dependency
 - **v1.7.0** — adds `supreme-benchmarking` skill: research-grade benchmarking for AI/ML/LLM/npm projects inspired by OpenAI, Anthropic, Google DeepMind, xAI, DeepSeek, Xiaomi MiMo, Hugging Face, and Unsloth methodologies; four personas applied to benchmark design; preregistration + statistical rigor gates (CI95, multi-seed variance, effect size) + contamination defense (canaries, n-gram, held-out sets) + harness commit pinning + npm protocol (tinybench/mitata, hyperfine, size-limit) + benchmark-card reporting with bold-best tables, error bars, efficiency frontier, raw JSONL + one-command reproducibility + CI regression tracking; honest measurement over impressive numbers
 - **v1.6.0** — added `supreme-council` skill: principal multi-perspective deliberation council for ambiguous high-stakes decisions across Product, Engineering, AI/ML/LLM Architecture, Research, Operations, Strategy; convenes four distinct cognitive personas (First-Principle Thinker, Expansionist, Outsider, Executor); runs three-round protocol (individual → anonymous peer review → synthesis preserving dissent); integrates Spec-Kit phasing + Klein premortem + Cynefin uncertainty handling + tabular report + post-decision calibration loop; never tries to please the user
 - **v1.5.0** — added `supreme-content-craft` skill: principal content craft discipline for SEO, SEM, Header Binding (HTML/HTTP/AdTech), Copywriting, Marketing, Branding, Growth, Content Strategy, Technical/UX/Ghostwriting, Writers, Authors, Researchers, Editors; integrates six persuasion frameworks (AIDA, Cialdini, StoryBrand/PAS/FAB/Schwartz/SUCCESs/Ogilvy/Hopkins, Schopenhauer ethical eristic, Joe Girard Law of 250, Cialdini Pre-Suasion); Features→Project→How→Benefits→Sales→Purchase content structure; 15 quality tool gates; ethical persuasion only

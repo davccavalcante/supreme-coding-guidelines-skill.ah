@@ -1,8 +1,8 @@
 {
   "$schema": "https://www.schemastore.org/claude-code-marketplace.json",
   "name": "ah-language",
-  "version": "1.8.0",
-  "description": "Marketplace for the .ah Teleological Semantic Format ecosystem by David C. Cavalcante. Hosts the supreme-coding-guidelines plugin (bundles the ah-parser bootstrap, the always-on coding-guidelines behavior, the on-demand supreme-project-audit skill, the on-demand supreme-problem-solving skill, the on-demand supreme-ai-engineering skill, the on-demand supreme-npm-node skill, the on-demand supreme-content-craft skill, the on-demand supreme-council skill, the on-demand supreme-benchmarking skill, and the on-demand supreme-diagramming skill).",
+  "version": "1.9.0",
+  "description": "Marketplace for the .ah Teleological Semantic Format ecosystem by David C. Cavalcante. Hosts the supreme-coding-guidelines plugin (bundles the ah-parser bootstrap, the always-on coding-guidelines behavior, the on-demand supreme-project-audit skill, the on-demand supreme-problem-solving skill, the on-demand supreme-ai-engineering skill, the on-demand supreme-npm-node skill, the on-demand supreme-content-craft skill, the on-demand supreme-council skill, the on-demand supreme-benchmarking skill, the on-demand supreme-diagramming skill, and the on-demand supreme-ai-governance skill).",
   "owner": {
     "name": "David C. Cavalcante",
     "url": "https://github.com/davccavalcante"
@@ -14,8 +14,8 @@
         "source": "github",
         "repo": "davccavalcante/supreme-coding-guidelines-skill.ah"
       },
-      "version": "1.8.0",
-      "description": ".ah skill bundle for Claude Code. Token compression + surgical behavior + disciplined diagnosis + TDD + architectural control + evidence-driven audit + genuine problem-solving + principal AI engineering + latest-always NPM/Node + principal content craft + multi-persona deliberation council + research-grade benchmarking + living-diagram companion (deterministic declarative layer, checksum-validated, compiled to Mermaid/D2/draw.io/Excalidraw, versioned and synced with the repo). Bundles ten skills: ah-parser, supreme-coding-guidelines (always-on), supreme-project-audit, supreme-problem-solving, supreme-ai-engineering, supreme-npm-node, supreme-content-craft, supreme-council, supreme-benchmarking, supreme-diagramming (all on-demand). User code is always preserved verbatim.",
+      "version": "1.9.0",
+      "description": ".ah skill bundle for Claude Code. Token compression + surgical behavior + disciplined diagnosis + TDD + architectural control + evidence-driven audit + genuine problem-solving + principal AI engineering + latest-always NPM/Node + principal content craft + multi-persona deliberation council + research-grade benchmarking + living-diagram companion (deterministic declarative layer, checksum-validated, compiled to Mermaid/D2/draw.io/Excalidraw, versioned and synced with the repo) + first-in-the-world AI governance & compliance (ISO/IEC 42001 + EU AI Act + NIST AI RMF + global regulatory map). Bundles eleven skills: ah-parser, supreme-coding-guidelines (always-on), supreme-project-audit, supreme-problem-solving, supreme-ai-engineering, supreme-npm-node, supreme-content-craft, supreme-council, supreme-benchmarking, supreme-diagramming, supreme-ai-governance (all on-demand). User code is always preserved verbatim.",
       "category": "productivity",
       "license": "MIT",
       "keywords": [

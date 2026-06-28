@@ -2,7 +2,7 @@
 name: supreme-coding-guidelines
 description: Maximum semantic compression + surgical coding behavior + disciplined diagnosis + TDD + architectural control. Always-on in Kiro.
 author: David C. Cavalcante
-version: 1.8.0
+version: 1.9.0
 alwaysApply: true
 ---
 

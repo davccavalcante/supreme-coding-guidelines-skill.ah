@@ -2,7 +2,7 @@
 name: supreme-diagramming
 description: Living-diagram companion for Product Engineers, Software/LLM Architects, Tech Leads, Technical Writers, DevOps, and AI Researchers. Treats diagrams (architecture, flow, ERD, sequence, class, C4, state) as living versioned artifacts described in a deterministic declarative layer validated by gematria checksum then compiled to portable targets (Mermaid, D2, draw.io XML, Excalidraw) with no proprietary lock-in. Describe-first pipeline, deterministic-verification-first with vision only as reinforcement, diagram-as-file-next-to-code diffed in pull requests, memory of prior diagrams, graceful degradation to Mermaid/D2 text with no heavy desktop dependency. Deterministic validation over probabilistic vision, living artifact over one-shot export, portable format over lock-in. On-demand in Claude Code.
 author: David C. Cavalcante
-version: 1.8.0
+version: 1.9.0
 alwaysApply: false
 ---
 

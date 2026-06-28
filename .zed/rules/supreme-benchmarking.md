@@ -2,7 +2,7 @@
 name: supreme-benchmarking
 description: Principal research and data-science benchmarking discipline for AI/ML/LLM/npm projects inspired by OpenAI, Anthropic, Google DeepMind, xAI, DeepSeek, Xiaomi MiMo, Hugging Face, and Unsloth methodologies. Four personas applied to benchmark design + statistical rigor gates (CI95, multi-seed) + contamination defense + harness pinning + npm protocol (tinybench/mitata, hyperfine, size-limit) + benchmark-card reporting + one-command reproducibility + honest disclosure + CI regression tracking. Honest measurement over impressive numbers. On-demand in Zed.
 author: David C. Cavalcante
-version: 1.8.0
+version: 1.9.0
 alwaysApply: false
 ---
 
